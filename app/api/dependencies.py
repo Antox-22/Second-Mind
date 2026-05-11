@@ -1,8 +1,7 @@
 from fastapi import APIRouter, WebSocket
-import logging as log
+from app.core.log import log
 
 current_ws = None
-log.basicConfig(level=log.DEBUG)
 router = APIRouter()
 
 @router.get("/")
