@@ -1,7 +1,7 @@
 from app.core.log import log
 from app.core.path import *
 import logging as log
-import importlib
+from importlib.metadata import distribution, PackageNotFoundError
 
 def get_dependencies():
     _dependencies = []
@@ -32,8 +32,8 @@ def check_dependencies():
 
     for _pkg in _dependencies:
         try:
-            importlib.import_module(_pkg)
-        except ImportError:
+            distribution(_pkg)
+        except PackageNotFoundError:
             _missing.append(_pkg)
 
             # DEBUG: Print missing package
