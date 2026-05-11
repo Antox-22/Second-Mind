@@ -1,7 +1,7 @@
 from app.core.log import log
 from app.core.path import *
 import logging as log
-
+import importlib
 
 def get_dependencies():
     _dependencies = []
@@ -25,3 +25,21 @@ def get_dependencies():
             log.debug(f"PKG added {_pkg}")
 
     return _dependencies
+
+def check_dependencies():
+    _dependencies = get_dependencies()
+    _missing = []
+
+    for _pkg in _dependencies:
+        try:
+            importlib.import_module(_pkg)
+        except ImportError:
+            _missing.append(_pkg)
+
+            # DEBUG: Print missing package
+            log.debug(f"Missing *{_pkg}* package")
+
+    return (not _missing, _missing)
+
+if __name__ == "__main__": 
+    check_dependencies()
