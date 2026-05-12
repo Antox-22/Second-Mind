@@ -7,13 +7,17 @@ import json
 class App(BaseModel):
     name: str
     version: str
+    language: str
+
+class User(BaseModel):
+    name: str
+    age: int
 
 class _Config(BaseModel):
     app: App
-    language: str
 
 class Config:
-    def __ini__(self):
+    def __init__(self):
         self.language = None
         self.config: _Config = None
 
@@ -30,6 +34,7 @@ class Config:
         # DEBUG: Config loaded
         log.debug("Settings loaded.")
 
+    @safe()
     def _save(self):
         with open(ROOT / "config" / "settings.json", "w") as f:
             f.write(self.config.model_dump_json(indent=2))
