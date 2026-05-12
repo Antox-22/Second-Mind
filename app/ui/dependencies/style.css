@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: rgb(8, 8, 8);
+}
+
+.main {
+    padding: 2rem;
+}
+
+.header {
+    font-family: "Space Grotesk", sans-serif;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+
+    .title {
+        margin-left: 2vw;
+        font-weight: bold;
+    }
+
+    .icon {
+        width: 3.5rem;
+    }
+}
+
+.section {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .section-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-left: 1vw;
+    }
+
+    .progress {
+        width: 10%;
+        height: 0.5rem;
+        background: #ff5e00;
+        border-radius: 999px;
+        overflow: hidden;
+        transition: width 1s ease-in-out;
+    }
+
+    .progress-bar {
+        width: 40%;
+        height: 100%;
+        background: rgb(61, 61, 61);
+        border-radius: 999px;
+    }
+}
