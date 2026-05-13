@@ -41,5 +41,5 @@ def check_dependencies():
 
     return (not _missing, _missing)
 
-if __name__ == "__main__": 
+if __name__ == "__main__":
     check_dependencies()

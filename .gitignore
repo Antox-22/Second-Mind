@@ -1,3 +1,4 @@
 .env
 .docs
 .vscode
+__pycache__
