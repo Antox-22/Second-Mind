@@ -1,6 +1,5 @@
 from app.core.log import log
 from app.core.path import *
-import logging as log
 from importlib.metadata import distribution, PackageNotFoundError
 
 def get_dependencies():

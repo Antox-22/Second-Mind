@@ -44,7 +44,7 @@ html, body {
     width: 100%;
     height: 80vh;
 
-    display: flex;
+    display: none;
     justify-content: center;
 
     .card {
@@ -64,7 +64,7 @@ html, body {
 }
 
     .log {
-        margin-left: 1vw;
+        margin-left: 1.5vw;
         margin-bottom: 0.5rem;
 
         lang {

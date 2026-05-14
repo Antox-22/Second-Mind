@@ -1,10 +1,10 @@
 from app.core.path import ROOT
-from ui.api.dependencies import Api
+from ui.api.dependencies import Api, set_window
 import webview
 
 html = ROOT / "ui" / "dependencies" / "index.html"
 
-windows = webview.create_window(
+window = webview.create_window(
     title = "Second Mind - Package Manager",
     min_size=(700, 400),
     js_api=Api(),
@@ -16,6 +16,8 @@ windows = webview.create_window(
 
 def start_ui():
     webview.start(
+        func=set_window,
+        args=(window),
         icon=ROOT / "assets" / "icons" / "icon.ico",
         debug=True
     )

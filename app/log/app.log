@@ -235,3 +235,642 @@
 2026-05-14 18:05:36,996 [DEBUG] PKG added fastapi
 2026-05-14 18:05:36,996 [DEBUG] PKG added uvicorn
 2026-05-14 18:05:36,996 [DEBUG] PKG added pydantic
+2026-05-14 18:17:44,459 [INFO] Settings loaded.
+2026-05-14 18:17:44,460 [INFO] Settings loaded.
+2026-05-14 18:17:44,826 [DEBUG] Using WinForms / Chromium
+2026-05-14 18:17:45,528 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-14 18:17:45,528 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-14 18:17:45,541 [DEBUG] _pywebviewready event fired
+2026-05-14 18:17:45,552 [DEBUG] loaded event fired
+2026-05-14 18:17:45,555 [DEBUG] PKG added spacy
+2026-05-14 18:17:45,555 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:17:45,555 [DEBUG] PKG added scikit-learn
+2026-05-14 18:17:45,556 [DEBUG] PKG added networkx
+2026-05-14 18:17:45,556 [DEBUG] PKG added numpy
+2026-05-14 18:17:45,556 [DEBUG] PKG added pywebview
+2026-05-14 18:17:45,556 [DEBUG] PKG added fastapi
+2026-05-14 18:17:45,556 [DEBUG] PKG added uvicorn
+2026-05-14 18:17:45,556 [DEBUG] PKG added pydantic
+2026-05-14 18:17:45,558 [WARNING] Missing *spacy* package
+2026-05-14 18:17:45,560 [WARNING] Missing *sentence-transformers* package
+2026-05-14 18:17:45,561 [WARNING] Missing *scikit-learn* package
+2026-05-14 18:17:45,561 [WARNING] Missing *networkx* package
+2026-05-14 18:17:45,562 [WARNING] Missing *numpy* package
+2026-05-14 18:17:45,563 [WARNING] Missing *fastapi* package
+2026-05-14 18:17:45,563 [WARNING] Missing *uvicorn* package
+2026-05-14 18:17:45,564 [DEBUG] PKG added spacy
+2026-05-14 18:17:45,564 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:17:45,564 [DEBUG] PKG added scikit-learn
+2026-05-14 18:17:45,564 [DEBUG] PKG added networkx
+2026-05-14 18:17:45,564 [DEBUG] PKG added numpy
+2026-05-14 18:17:45,564 [DEBUG] PKG added pywebview
+2026-05-14 18:17:45,564 [DEBUG] PKG added fastapi
+2026-05-14 18:17:45,564 [DEBUG] PKG added uvicorn
+2026-05-14 18:17:45,564 [DEBUG] PKG added pydantic
+2026-05-14 18:17:51,304 [INFO] Settings loaded.
+2026-05-14 18:21:53,456 [INFO] Settings loaded.
+2026-05-14 18:21:53,457 [INFO] Settings loaded.
+2026-05-14 18:21:53,808 [DEBUG] Using WinForms / Chromium
+2026-05-14 18:21:54,529 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-14 18:21:54,529 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-14 18:21:54,541 [DEBUG] _pywebviewready event fired
+2026-05-14 18:21:54,552 [DEBUG] loaded event fired
+2026-05-14 18:21:54,553 [DEBUG] PKG added spacy
+2026-05-14 18:21:54,553 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:21:54,553 [DEBUG] PKG added scikit-learn
+2026-05-14 18:21:54,553 [DEBUG] PKG added networkx
+2026-05-14 18:21:54,554 [DEBUG] PKG added numpy
+2026-05-14 18:21:54,554 [DEBUG] PKG added pywebview
+2026-05-14 18:21:54,554 [DEBUG] PKG added fastapi
+2026-05-14 18:21:54,554 [DEBUG] PKG added uvicorn
+2026-05-14 18:21:54,554 [DEBUG] PKG added pydantic
+2026-05-14 18:21:54,555 [WARNING] Missing *spacy* package
+2026-05-14 18:21:54,556 [WARNING] Missing *sentence-transformers* package
+2026-05-14 18:21:54,556 [WARNING] Missing *scikit-learn* package
+2026-05-14 18:21:54,557 [WARNING] Missing *networkx* package
+2026-05-14 18:21:54,557 [WARNING] Missing *numpy* package
+2026-05-14 18:21:54,558 [WARNING] Missing *fastapi* package
+2026-05-14 18:21:54,559 [WARNING] Missing *uvicorn* package
+2026-05-14 18:21:54,559 [DEBUG] PKG added spacy
+2026-05-14 18:21:54,559 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:21:54,559 [DEBUG] PKG added scikit-learn
+2026-05-14 18:21:54,560 [DEBUG] PKG added networkx
+2026-05-14 18:21:54,560 [DEBUG] PKG added numpy
+2026-05-14 18:21:54,560 [DEBUG] PKG added pywebview
+2026-05-14 18:21:54,560 [DEBUG] PKG added fastapi
+2026-05-14 18:21:54,560 [DEBUG] PKG added uvicorn
+2026-05-14 18:21:54,560 [DEBUG] PKG added pydantic
+2026-05-14 18:21:54,562 [DEBUG] PKG added spacy
+2026-05-14 18:21:54,562 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:21:54,562 [DEBUG] PKG added scikit-learn
+2026-05-14 18:21:54,562 [DEBUG] PKG added networkx
+2026-05-14 18:21:54,562 [DEBUG] PKG added numpy
+2026-05-14 18:21:54,562 [DEBUG] PKG added pywebview
+2026-05-14 18:21:54,563 [DEBUG] PKG added fastapi
+2026-05-14 18:21:54,563 [DEBUG] PKG added uvicorn
+2026-05-14 18:21:54,563 [DEBUG] PKG added pydantic
+2026-05-14 18:21:54,563 [WARNING] Missing *spacy* package
+2026-05-14 18:21:54,564 [WARNING] Missing *sentence-transformers* package
+2026-05-14 18:21:54,564 [WARNING] Missing *scikit-learn* package
+2026-05-14 18:21:54,565 [WARNING] Missing *networkx* package
+2026-05-14 18:21:54,565 [WARNING] Missing *numpy* package
+2026-05-14 18:21:54,566 [WARNING] Missing *fastapi* package
+2026-05-14 18:21:54,567 [WARNING] Missing *uvicorn* package
+2026-05-14 18:21:54,567 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:22:26,348 [DEBUG] PKG added spacy
+2026-05-14 18:22:26,348 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:22:26,348 [DEBUG] PKG added scikit-learn
+2026-05-14 18:22:26,348 [DEBUG] PKG added networkx
+2026-05-14 18:22:26,348 [DEBUG] PKG added numpy
+2026-05-14 18:22:26,349 [DEBUG] PKG added pywebview
+2026-05-14 18:22:26,349 [DEBUG] PKG added fastapi
+2026-05-14 18:22:26,349 [DEBUG] PKG added uvicorn
+2026-05-14 18:22:26,349 [DEBUG] PKG added pydantic
+2026-05-14 18:26:27,654 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-14 18:26:27,655 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-14 18:26:27,659 [DEBUG] _pywebviewready event fired
+2026-05-14 18:26:27,668 [DEBUG] loaded event fired
+2026-05-14 18:26:27,668 [DEBUG] PKG added spacy
+2026-05-14 18:26:27,668 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:26:27,668 [DEBUG] PKG added scikit-learn
+2026-05-14 18:26:27,668 [DEBUG] PKG added networkx
+2026-05-14 18:26:27,669 [DEBUG] PKG added numpy
+2026-05-14 18:26:27,669 [DEBUG] PKG added pywebview
+2026-05-14 18:26:27,669 [DEBUG] PKG added fastapi
+2026-05-14 18:26:27,669 [DEBUG] PKG added uvicorn
+2026-05-14 18:26:27,669 [DEBUG] PKG added pydantic
+2026-05-14 18:26:41,902 [INFO] Settings loaded.
+2026-05-14 18:33:43,676 [INFO] Settings loaded.
+2026-05-14 18:33:43,676 [INFO] Settings loaded.
+2026-05-14 18:33:44,018 [DEBUG] Using WinForms / Chromium
+2026-05-14 18:33:44,672 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-14 18:33:44,672 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-14 18:33:44,752 [DEBUG] _pywebviewready event fired
+2026-05-14 18:33:44,762 [DEBUG] loaded event fired
+2026-05-14 18:33:44,763 [DEBUG] PKG added spacy
+2026-05-14 18:33:44,763 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:33:44,763 [DEBUG] PKG added scikit-learn
+2026-05-14 18:33:44,763 [DEBUG] PKG added networkx
+2026-05-14 18:33:44,763 [DEBUG] PKG added numpy
+2026-05-14 18:33:44,763 [DEBUG] PKG added pywebview
+2026-05-14 18:33:44,764 [DEBUG] PKG added fastapi
+2026-05-14 18:33:44,764 [DEBUG] PKG added uvicorn
+2026-05-14 18:33:44,764 [DEBUG] PKG added pydantic
+2026-05-14 18:33:44,765 [WARNING] Missing *spacy* package
+2026-05-14 18:33:44,765 [WARNING] Missing *sentence-transformers* package
+2026-05-14 18:33:44,766 [WARNING] Missing *scikit-learn* package
+2026-05-14 18:33:44,766 [WARNING] Missing *networkx* package
+2026-05-14 18:33:44,767 [WARNING] Missing *numpy* package
+2026-05-14 18:33:44,767 [WARNING] Missing *fastapi* package
+2026-05-14 18:33:44,768 [WARNING] Missing *uvicorn* package
+2026-05-14 18:33:44,769 [DEBUG] PKG added spacy
+2026-05-14 18:33:44,769 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:33:44,769 [DEBUG] PKG added scikit-learn
+2026-05-14 18:33:44,769 [DEBUG] PKG added networkx
+2026-05-14 18:33:44,769 [DEBUG] PKG added numpy
+2026-05-14 18:33:44,769 [DEBUG] PKG added pywebview
+2026-05-14 18:33:44,769 [DEBUG] PKG added fastapi
+2026-05-14 18:33:44,769 [DEBUG] PKG added uvicorn
+2026-05-14 18:33:44,769 [DEBUG] PKG added pydantic
+2026-05-14 18:33:44,772 [DEBUG] PKG added spacy
+2026-05-14 18:33:44,772 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:33:44,772 [DEBUG] PKG added scikit-learn
+2026-05-14 18:33:44,772 [DEBUG] PKG added networkx
+2026-05-14 18:33:44,772 [DEBUG] PKG added numpy
+2026-05-14 18:33:44,772 [DEBUG] PKG added pywebview
+2026-05-14 18:33:44,772 [DEBUG] PKG added fastapi
+2026-05-14 18:33:44,772 [DEBUG] PKG added uvicorn
+2026-05-14 18:33:44,773 [DEBUG] PKG added pydantic
+2026-05-14 18:33:44,773 [WARNING] Missing *spacy* package
+2026-05-14 18:33:44,774 [WARNING] Missing *sentence-transformers* package
+2026-05-14 18:33:44,774 [WARNING] Missing *scikit-learn* package
+2026-05-14 18:33:44,775 [WARNING] Missing *networkx* package
+2026-05-14 18:33:44,775 [WARNING] Missing *numpy* package
+2026-05-14 18:33:44,776 [WARNING] Missing *fastapi* package
+2026-05-14 18:33:44,777 [WARNING] Missing *uvicorn* package
+2026-05-14 18:33:44,778 [ERROR] Errore in _install_packages 
+Traceback (most recent call last):
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\core\error.py", line 9, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\dependencies\install.py", line 22, in _install_packages
+    window.evaluate_js(f"checkPkgLog({pkg}, 0)")
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\window.py", line 49, in wrapper
+    return function(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\window.py", line 503, in evaluate_js
+    raise JavascriptException(result)
+webview.errors.JavascriptException: {'name': 'ReferenceError', 'stack': 'ReferenceError: checkPkgLog is not defined\n    at eval (eval at <anonymous> (:4:29), <anonymous>:1:1)\n    at <anonymous>:4:29', 'message': 'checkPkgLog is not defined'}
+2026-05-14 18:33:44,781 [ERROR] Errore in _install_packages
+Traceback (most recent call last):
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\core\error.py", line 9, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\dependencies\install.py", line 22, in _install_packages
+    window.evaluate_js(f"checkPkgLog({pkg}, 0)")
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\window.py", line 49, in wrapper
+    return function(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\window.py", line 503, in evaluate_js
+    raise JavascriptException(result)
+webview.errors.JavascriptException: {'name': 'ReferenceError', 'stack': 'ReferenceError: checkPkgLog is not defined\n    at eval (eval at <anonymous> (:4:29), <anonymous>:1:1)\n    at <anonymous>:4:29', 'message': 'checkPkgLog is not defined'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\core\error.py", line 18, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\dependencies\install.py", line 22, in _install_packages
+    window.evaluate_js(f"checkPkgLog({pkg}, 0)")
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\window.py", line 49, in wrapper
+    return function(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\window.py", line 503, in evaluate_js
+    raise JavascriptException(result)
+webview.errors.JavascriptException: {'name': 'ReferenceError', 'stack': 'ReferenceError: checkPkgLog is not defined\n    at eval (eval at <anonymous> (:4:29), <anonymous>:1:1)\n    at <anonymous>:4:29', 'message': 'checkPkgLog is not defined'}
+2026-05-14 18:35:42,444 [INFO] Settings loaded.
+2026-05-14 18:35:45,196 [INFO] Settings loaded.
+2026-05-14 18:35:45,197 [INFO] Settings loaded.
+2026-05-14 18:35:45,581 [DEBUG] Using WinForms / Chromium
+2026-05-14 18:35:46,859 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-14 18:35:46,859 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-14 18:35:46,871 [DEBUG] _pywebviewready event fired
+2026-05-14 18:35:46,881 [DEBUG] loaded event fired
+2026-05-14 18:35:46,883 [DEBUG] PKG added spacy
+2026-05-14 18:35:46,883 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:35:46,883 [DEBUG] PKG added scikit-learn
+2026-05-14 18:35:46,883 [DEBUG] PKG added networkx
+2026-05-14 18:35:46,883 [DEBUG] PKG added numpy
+2026-05-14 18:35:46,883 [DEBUG] PKG added pywebview
+2026-05-14 18:35:46,883 [DEBUG] PKG added fastapi
+2026-05-14 18:35:46,884 [DEBUG] PKG added uvicorn
+2026-05-14 18:35:46,884 [DEBUG] PKG added pydantic
+2026-05-14 18:35:46,885 [WARNING] Missing *spacy* package
+2026-05-14 18:35:46,885 [WARNING] Missing *sentence-transformers* package
+2026-05-14 18:35:46,886 [WARNING] Missing *scikit-learn* package
+2026-05-14 18:35:46,886 [WARNING] Missing *networkx* package
+2026-05-14 18:35:46,887 [WARNING] Missing *numpy* package
+2026-05-14 18:35:46,888 [WARNING] Missing *fastapi* package
+2026-05-14 18:35:46,888 [WARNING] Missing *uvicorn* package
+2026-05-14 18:35:46,889 [DEBUG] PKG added spacy
+2026-05-14 18:35:46,889 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:35:46,889 [DEBUG] PKG added scikit-learn
+2026-05-14 18:35:46,889 [DEBUG] PKG added networkx
+2026-05-14 18:35:46,889 [DEBUG] PKG added numpy
+2026-05-14 18:35:46,889 [DEBUG] PKG added pywebview
+2026-05-14 18:35:46,889 [DEBUG] PKG added fastapi
+2026-05-14 18:35:46,890 [DEBUG] PKG added uvicorn
+2026-05-14 18:35:46,890 [DEBUG] PKG added pydantic
+2026-05-14 18:35:46,891 [DEBUG] PKG added spacy
+2026-05-14 18:35:46,892 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:35:46,892 [DEBUG] PKG added scikit-learn
+2026-05-14 18:35:46,892 [DEBUG] PKG added networkx
+2026-05-14 18:35:46,892 [DEBUG] PKG added numpy
+2026-05-14 18:35:46,892 [DEBUG] PKG added pywebview
+2026-05-14 18:35:46,892 [DEBUG] PKG added fastapi
+2026-05-14 18:35:46,892 [DEBUG] PKG added uvicorn
+2026-05-14 18:35:46,892 [DEBUG] PKG added pydantic
+2026-05-14 18:35:46,893 [WARNING] Missing *spacy* package
+2026-05-14 18:35:46,894 [WARNING] Missing *sentence-transformers* package
+2026-05-14 18:35:46,894 [WARNING] Missing *scikit-learn* package
+2026-05-14 18:35:46,895 [WARNING] Missing *networkx* package
+2026-05-14 18:35:46,895 [WARNING] Missing *numpy* package
+2026-05-14 18:35:46,897 [WARNING] Missing *fastapi* package
+2026-05-14 18:35:46,897 [WARNING] Missing *uvicorn* package
+2026-05-14 18:35:46,898 [ERROR] Errore in _install_packages 
+Traceback (most recent call last):
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\core\error.py", line 9, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\dependencies\install.py", line 22, in _install_packages
+    window.evaluate_js(f"checkPkgLog(\"{pkg}\", 0)")
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\window.py", line 49, in wrapper
+    return function(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\window.py", line 503, in evaluate_js
+    raise JavascriptException(result)
+webview.errors.JavascriptException: {'name': 'ReferenceError', 'stack': 'ReferenceError: checkPkgLog is not defined\n    at eval (eval at <anonymous> (:4:29), <anonymous>:1:1)\n    at <anonymous>:4:29', 'message': 'checkPkgLog is not defined'}
+2026-05-14 18:35:46,901 [ERROR] Errore in _install_packages
+Traceback (most recent call last):
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\core\error.py", line 9, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\dependencies\install.py", line 22, in _install_packages
+    window.evaluate_js(f"checkPkgLog(\"{pkg}\", 0)")
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\window.py", line 49, in wrapper
+    return function(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\window.py", line 503, in evaluate_js
+    raise JavascriptException(result)
+webview.errors.JavascriptException: {'name': 'ReferenceError', 'stack': 'ReferenceError: checkPkgLog is not defined\n    at eval (eval at <anonymous> (:4:29), <anonymous>:1:1)\n    at <anonymous>:4:29', 'message': 'checkPkgLog is not defined'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\core\error.py", line 18, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\dependencies\install.py", line 22, in _install_packages
+    window.evaluate_js(f"checkPkgLog(\"{pkg}\", 0)")
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\window.py", line 49, in wrapper
+    return function(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\window.py", line 503, in evaluate_js
+    raise JavascriptException(result)
+webview.errors.JavascriptException: {'name': 'ReferenceError', 'stack': 'ReferenceError: checkPkgLog is not defined\n    at eval (eval at <anonymous> (:4:29), <anonymous>:1:1)\n    at <anonymous>:4:29', 'message': 'checkPkgLog is not defined'}
+2026-05-14 18:37:22,534 [INFO] Settings loaded.
+2026-05-14 18:37:25,445 [INFO] Settings loaded.
+2026-05-14 18:37:25,445 [INFO] Settings loaded.
+2026-05-14 18:37:25,788 [DEBUG] Using WinForms / Chromium
+2026-05-14 18:37:26,525 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-14 18:37:26,525 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-14 18:37:26,536 [DEBUG] _pywebviewready event fired
+2026-05-14 18:37:26,547 [DEBUG] loaded event fired
+2026-05-14 18:37:26,549 [DEBUG] PKG added spacy
+2026-05-14 18:37:26,549 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:37:26,549 [DEBUG] PKG added scikit-learn
+2026-05-14 18:37:26,549 [DEBUG] PKG added networkx
+2026-05-14 18:37:26,549 [DEBUG] PKG added numpy
+2026-05-14 18:37:26,549 [DEBUG] PKG added pywebview
+2026-05-14 18:37:26,549 [DEBUG] PKG added fastapi
+2026-05-14 18:37:26,550 [DEBUG] PKG added uvicorn
+2026-05-14 18:37:26,550 [DEBUG] PKG added pydantic
+2026-05-14 18:37:26,551 [WARNING] Missing *spacy* package
+2026-05-14 18:37:26,551 [WARNING] Missing *sentence-transformers* package
+2026-05-14 18:37:26,552 [WARNING] Missing *scikit-learn* package
+2026-05-14 18:37:26,552 [WARNING] Missing *networkx* package
+2026-05-14 18:37:26,553 [WARNING] Missing *numpy* package
+2026-05-14 18:37:26,553 [WARNING] Missing *fastapi* package
+2026-05-14 18:37:26,554 [WARNING] Missing *uvicorn* package
+2026-05-14 18:37:26,554 [DEBUG] PKG added spacy
+2026-05-14 18:37:26,555 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:37:26,555 [DEBUG] PKG added scikit-learn
+2026-05-14 18:37:26,555 [DEBUG] PKG added networkx
+2026-05-14 18:37:26,555 [DEBUG] PKG added numpy
+2026-05-14 18:37:26,555 [DEBUG] PKG added pywebview
+2026-05-14 18:37:26,555 [DEBUG] PKG added fastapi
+2026-05-14 18:37:26,555 [DEBUG] PKG added uvicorn
+2026-05-14 18:37:26,555 [DEBUG] PKG added pydantic
+2026-05-14 18:37:26,558 [DEBUG] PKG added spacy
+2026-05-14 18:37:26,558 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:37:26,558 [DEBUG] PKG added scikit-learn
+2026-05-14 18:37:26,558 [DEBUG] PKG added networkx
+2026-05-14 18:37:26,559 [DEBUG] PKG added numpy
+2026-05-14 18:37:26,559 [DEBUG] PKG added pywebview
+2026-05-14 18:37:26,559 [DEBUG] PKG added fastapi
+2026-05-14 18:37:26,559 [DEBUG] PKG added uvicorn
+2026-05-14 18:37:26,559 [DEBUG] PKG added pydantic
+2026-05-14 18:37:26,560 [WARNING] Missing *spacy* package
+2026-05-14 18:37:26,560 [WARNING] Missing *sentence-transformers* package
+2026-05-14 18:37:26,561 [WARNING] Missing *scikit-learn* package
+2026-05-14 18:37:26,562 [WARNING] Missing *networkx* package
+2026-05-14 18:37:26,562 [WARNING] Missing *numpy* package
+2026-05-14 18:37:26,563 [WARNING] Missing *fastapi* package
+2026-05-14 18:37:26,564 [WARNING] Missing *uvicorn* package
+2026-05-14 18:37:26,565 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:37:37,201 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:37:43,423 [ERROR] Errore in _install_packages 
+Traceback (most recent call last):
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\core\error.py", line 9, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\dependencies\install.py", line 32, in _install_packages
+    subprocess.check_call(cmd)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['C:\\Users\\Utente\\Documents\\GitHub\\Second-Mind\\.env\\Scripts\\python.exe', '-m', 'pip', 'install', '--disable-pip-version-check', '--no-input', 'sentence-transformers']' returned non-zero exit status 1.
+2026-05-14 18:37:43,427 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:37:44,202 [INFO] Settings loaded.
+2026-05-14 18:37:44,318 [ERROR] Errore in _install_packages
+Traceback (most recent call last):
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\core\error.py", line 9, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\dependencies\install.py", line 32, in _install_packages
+    subprocess.check_call(cmd)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['C:\\Users\\Utente\\Documents\\GitHub\\Second-Mind\\.env\\Scripts\\python.exe', '-m', 'pip', 'install', '--disable-pip-version-check', '--no-input', 'sentence-transformers']' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\core\error.py", line 18, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\dependencies\install.py", line 32, in _install_packages
+    subprocess.check_call(cmd)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['C:\\Users\\Utente\\Documents\\GitHub\\Second-Mind\\.env\\Scripts\\python.exe', '-m', 'pip', 'install', '--disable-pip-version-check', '--no-input', 'spacy']' returned non-zero exit status 1.
+2026-05-14 18:39:33,629 [INFO] Settings loaded.
+2026-05-14 18:39:33,630 [INFO] Settings loaded.
+2026-05-14 18:39:33,977 [DEBUG] Using WinForms / Chromium
+2026-05-14 18:39:34,628 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-14 18:39:34,629 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-14 18:39:34,640 [DEBUG] _pywebviewready event fired
+2026-05-14 18:39:34,649 [DEBUG] loaded event fired
+2026-05-14 18:39:34,651 [DEBUG] PKG added spacy
+2026-05-14 18:39:34,651 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:39:34,651 [DEBUG] PKG added scikit-learn
+2026-05-14 18:39:34,651 [DEBUG] PKG added networkx
+2026-05-14 18:39:34,651 [DEBUG] PKG added numpy
+2026-05-14 18:39:34,651 [DEBUG] PKG added pywebview
+2026-05-14 18:39:34,652 [DEBUG] PKG added fastapi
+2026-05-14 18:39:34,652 [DEBUG] PKG added uvicorn
+2026-05-14 18:39:34,652 [DEBUG] PKG added pydantic
+2026-05-14 18:39:34,653 [WARNING] Missing *sentence-transformers* package
+2026-05-14 18:39:34,655 [WARNING] Missing *fastapi* package
+2026-05-14 18:39:34,656 [WARNING] Missing *uvicorn* package
+2026-05-14 18:39:34,657 [DEBUG] PKG added spacy
+2026-05-14 18:39:34,657 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:39:34,657 [DEBUG] PKG added scikit-learn
+2026-05-14 18:39:34,657 [DEBUG] PKG added networkx
+2026-05-14 18:39:34,657 [DEBUG] PKG added numpy
+2026-05-14 18:39:34,658 [DEBUG] PKG added pywebview
+2026-05-14 18:39:34,658 [DEBUG] PKG added fastapi
+2026-05-14 18:39:34,658 [DEBUG] PKG added uvicorn
+2026-05-14 18:39:34,658 [DEBUG] PKG added pydantic
+2026-05-14 18:39:34,661 [DEBUG] PKG added spacy
+2026-05-14 18:39:34,661 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:39:34,661 [DEBUG] PKG added scikit-learn
+2026-05-14 18:39:34,661 [DEBUG] PKG added networkx
+2026-05-14 18:39:34,661 [DEBUG] PKG added numpy
+2026-05-14 18:39:34,661 [DEBUG] PKG added pywebview
+2026-05-14 18:39:34,662 [DEBUG] PKG added fastapi
+2026-05-14 18:39:34,662 [DEBUG] PKG added uvicorn
+2026-05-14 18:39:34,662 [DEBUG] PKG added pydantic
+2026-05-14 18:39:34,663 [WARNING] Missing *sentence-transformers* package
+2026-05-14 18:39:34,665 [WARNING] Missing *fastapi* package
+2026-05-14 18:39:34,666 [WARNING] Missing *uvicorn* package
+2026-05-14 18:39:34,673 [INFO] Installing packages: ['sentence-transformers', 'fastapi', 'uvicorn']
+2026-05-14 18:39:37,543 [INFO] Installing packages: ['sentence-transformers', 'fastapi', 'uvicorn']
+2026-05-14 18:39:39,244 [INFO] Installing packages: ['sentence-transformers', 'fastapi', 'uvicorn']
+2026-05-14 18:40:01,366 [INFO] Settings loaded.
+2026-05-14 18:40:04,148 [INFO] Settings loaded.
+2026-05-14 18:40:04,148 [INFO] Settings loaded.
+2026-05-14 18:40:04,479 [DEBUG] Using WinForms / Chromium
+2026-05-14 18:40:05,158 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-14 18:40:05,159 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-14 18:40:05,171 [DEBUG] _pywebviewready event fired
+2026-05-14 18:40:05,179 [DEBUG] loaded event fired
+2026-05-14 18:40:05,185 [DEBUG] PKG added spacy
+2026-05-14 18:40:05,185 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:40:05,185 [DEBUG] PKG added scikit-learn
+2026-05-14 18:40:05,185 [DEBUG] PKG added networkx
+2026-05-14 18:40:05,185 [DEBUG] PKG added numpy
+2026-05-14 18:40:05,185 [DEBUG] PKG added pywebview
+2026-05-14 18:40:05,186 [DEBUG] PKG added fastapi
+2026-05-14 18:40:05,186 [DEBUG] PKG added uvicorn
+2026-05-14 18:40:05,186 [DEBUG] PKG added pydantic
+2026-05-14 18:40:27,391 [INFO] Settings loaded.
+2026-05-14 18:40:29,895 [INFO] Settings loaded.
+2026-05-14 18:40:29,895 [INFO] Settings loaded.
+2026-05-14 18:40:30,226 [DEBUG] Using WinForms / Chromium
+2026-05-14 18:40:30,909 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-14 18:40:30,910 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-14 18:40:30,922 [DEBUG] _pywebviewready event fired
+2026-05-14 18:40:30,933 [DEBUG] loaded event fired
+2026-05-14 18:40:30,934 [DEBUG] PKG added spacy
+2026-05-14 18:40:30,935 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:40:30,935 [DEBUG] PKG added scikit-learn
+2026-05-14 18:40:30,935 [DEBUG] PKG added networkx
+2026-05-14 18:40:30,935 [DEBUG] PKG added numpy
+2026-05-14 18:40:30,935 [DEBUG] PKG added pywebview
+2026-05-14 18:40:30,935 [DEBUG] PKG added fastapi
+2026-05-14 18:40:30,935 [DEBUG] PKG added uvicorn
+2026-05-14 18:40:30,936 [DEBUG] PKG added pydantic
+2026-05-14 18:40:51,119 [INFO] Settings loaded.
+2026-05-14 18:44:52,542 [INFO] Settings loaded.
+2026-05-14 18:44:52,543 [INFO] Settings loaded.
+2026-05-14 18:44:53,156 [DEBUG] Using WinForms / Chromium
+2026-05-14 18:44:53,875 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-14 18:44:53,876 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-14 18:44:53,965 [DEBUG] _pywebviewready event fired
+2026-05-14 18:44:53,976 [DEBUG] loaded event fired
+2026-05-14 18:44:53,978 [DEBUG] PKG added spacy
+2026-05-14 18:44:53,978 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:44:53,978 [DEBUG] PKG added scikit-learn
+2026-05-14 18:44:53,979 [DEBUG] PKG added networkx
+2026-05-14 18:44:53,979 [DEBUG] PKG added numpy
+2026-05-14 18:44:53,979 [DEBUG] PKG added pywebview
+2026-05-14 18:44:53,979 [DEBUG] PKG added fastapi
+2026-05-14 18:44:53,979 [DEBUG] PKG added uvicorn
+2026-05-14 18:44:53,979 [DEBUG] PKG added pydantic
+2026-05-14 18:44:53,981 [WARNING] Missing *spacy* package
+2026-05-14 18:44:53,981 [WARNING] Missing *sentence-transformers* package
+2026-05-14 18:44:53,982 [WARNING] Missing *scikit-learn* package
+2026-05-14 18:44:53,982 [WARNING] Missing *networkx* package
+2026-05-14 18:44:53,983 [WARNING] Missing *numpy* package
+2026-05-14 18:44:53,984 [WARNING] Missing *fastapi* package
+2026-05-14 18:44:53,984 [WARNING] Missing *uvicorn* package
+2026-05-14 18:44:53,985 [DEBUG] PKG added spacy
+2026-05-14 18:44:53,985 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:44:53,985 [DEBUG] PKG added scikit-learn
+2026-05-14 18:44:53,985 [DEBUG] PKG added networkx
+2026-05-14 18:44:53,985 [DEBUG] PKG added numpy
+2026-05-14 18:44:53,986 [DEBUG] PKG added pywebview
+2026-05-14 18:44:53,986 [DEBUG] PKG added fastapi
+2026-05-14 18:44:53,986 [DEBUG] PKG added uvicorn
+2026-05-14 18:44:53,986 [DEBUG] PKG added pydantic
+2026-05-14 18:44:53,989 [DEBUG] PKG added spacy
+2026-05-14 18:44:53,989 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:44:53,989 [DEBUG] PKG added scikit-learn
+2026-05-14 18:44:53,989 [DEBUG] PKG added networkx
+2026-05-14 18:44:53,989 [DEBUG] PKG added numpy
+2026-05-14 18:44:53,990 [DEBUG] PKG added pywebview
+2026-05-14 18:44:53,990 [DEBUG] PKG added fastapi
+2026-05-14 18:44:53,990 [DEBUG] PKG added uvicorn
+2026-05-14 18:44:53,990 [DEBUG] PKG added pydantic
+2026-05-14 18:44:53,991 [WARNING] Missing *spacy* package
+2026-05-14 18:44:53,991 [WARNING] Missing *sentence-transformers* package
+2026-05-14 18:44:53,992 [WARNING] Missing *scikit-learn* package
+2026-05-14 18:44:53,992 [WARNING] Missing *networkx* package
+2026-05-14 18:44:53,993 [WARNING] Missing *numpy* package
+2026-05-14 18:44:53,994 [WARNING] Missing *fastapi* package
+2026-05-14 18:44:53,994 [WARNING] Missing *uvicorn* package
+2026-05-14 18:44:53,996 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:45:26,704 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:47:21,886 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:47:23,138 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:47:24,182 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:47:25,208 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:47:27,438 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:49:02,158 [INFO] Settings loaded.
+2026-05-14 18:49:04,602 [INFO] Settings loaded.
+2026-05-14 18:49:04,603 [INFO] Settings loaded.
+2026-05-14 18:49:05,026 [DEBUG] Using WinForms / Chromium
+2026-05-14 18:49:05,725 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-14 18:49:05,726 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-14 18:49:05,740 [DEBUG] _pywebviewready event fired
+2026-05-14 18:49:05,750 [DEBUG] loaded event fired
+2026-05-14 18:49:05,756 [DEBUG] PKG added spacy
+2026-05-14 18:49:05,756 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:49:05,757 [DEBUG] PKG added scikit-learn
+2026-05-14 18:49:05,757 [DEBUG] PKG added networkx
+2026-05-14 18:49:05,757 [DEBUG] PKG added numpy
+2026-05-14 18:49:05,757 [DEBUG] PKG added pywebview
+2026-05-14 18:49:05,757 [DEBUG] PKG added fastapi
+2026-05-14 18:49:05,757 [DEBUG] PKG added uvicorn
+2026-05-14 18:49:05,758 [DEBUG] PKG added pydantic
+2026-05-14 18:49:10,953 [INFO] Settings loaded.
+2026-05-14 18:52:43,218 [DEBUG] PKG added spacy
+2026-05-14 18:52:43,218 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:52:43,218 [DEBUG] PKG added scikit-learn
+2026-05-14 18:52:43,219 [DEBUG] PKG added networkx
+2026-05-14 18:52:43,219 [DEBUG] PKG added numpy
+2026-05-14 18:52:43,219 [DEBUG] PKG added pywebview
+2026-05-14 18:52:43,219 [DEBUG] PKG added fastapi
+2026-05-14 18:52:43,219 [DEBUG] PKG added uvicorn
+2026-05-14 18:52:43,219 [DEBUG] PKG added pydantic
+2026-05-14 18:52:43,220 [WARNING] Missing *spacy* package
+2026-05-14 18:52:43,221 [WARNING] Missing *sentence-transformers* package
+2026-05-14 18:52:43,221 [WARNING] Missing *scikit-learn* package
+2026-05-14 18:52:43,222 [WARNING] Missing *networkx* package
+2026-05-14 18:52:43,222 [WARNING] Missing *numpy* package
+2026-05-14 18:52:43,223 [WARNING] Missing *fastapi* package
+2026-05-14 18:52:43,223 [WARNING] Missing *uvicorn* package
+2026-05-14 18:52:55,237 [INFO] Settings loaded.
+2026-05-14 18:52:55,237 [INFO] Settings loaded.
+2026-05-14 18:52:55,993 [DEBUG] Using WinForms / Chromium
+2026-05-14 18:52:56,744 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-14 18:52:56,745 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-14 18:52:56,857 [DEBUG] _pywebviewready event fired
+2026-05-14 18:52:56,868 [DEBUG] loaded event fired
+2026-05-14 18:52:56,869 [DEBUG] PKG added spacy
+2026-05-14 18:52:56,870 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:52:56,870 [DEBUG] PKG added scikit-learn
+2026-05-14 18:52:56,870 [DEBUG] PKG added networkx
+2026-05-14 18:52:56,870 [DEBUG] PKG added numpy
+2026-05-14 18:52:56,870 [DEBUG] PKG added pywebview
+2026-05-14 18:52:56,870 [DEBUG] PKG added fastapi
+2026-05-14 18:52:56,871 [DEBUG] PKG added uvicorn
+2026-05-14 18:52:56,871 [DEBUG] PKG added pydantic
+2026-05-14 18:52:56,872 [WARNING] Missing *spacy* package
+2026-05-14 18:52:56,873 [WARNING] Missing *sentence-transformers* package
+2026-05-14 18:52:56,873 [WARNING] Missing *scikit-learn* package
+2026-05-14 18:52:56,874 [WARNING] Missing *networkx* package
+2026-05-14 18:52:56,874 [WARNING] Missing *numpy* package
+2026-05-14 18:52:56,875 [WARNING] Missing *fastapi* package
+2026-05-14 18:52:56,875 [WARNING] Missing *uvicorn* package
+2026-05-14 18:52:56,876 [DEBUG] PKG added spacy
+2026-05-14 18:52:56,876 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:52:56,876 [DEBUG] PKG added scikit-learn
+2026-05-14 18:52:56,876 [DEBUG] PKG added networkx
+2026-05-14 18:52:56,877 [DEBUG] PKG added numpy
+2026-05-14 18:52:56,877 [DEBUG] PKG added pywebview
+2026-05-14 18:52:56,877 [DEBUG] PKG added fastapi
+2026-05-14 18:52:56,877 [DEBUG] PKG added uvicorn
+2026-05-14 18:52:56,877 [DEBUG] PKG added pydantic
+2026-05-14 18:52:56,880 [DEBUG] PKG added spacy
+2026-05-14 18:52:56,880 [DEBUG] PKG added sentence-transformers
+2026-05-14 18:52:56,880 [DEBUG] PKG added scikit-learn
+2026-05-14 18:52:56,880 [DEBUG] PKG added networkx
+2026-05-14 18:52:56,881 [DEBUG] PKG added numpy
+2026-05-14 18:52:56,881 [DEBUG] PKG added pywebview
+2026-05-14 18:52:56,881 [DEBUG] PKG added fastapi
+2026-05-14 18:52:56,881 [DEBUG] PKG added uvicorn
+2026-05-14 18:52:56,881 [DEBUG] PKG added pydantic
+2026-05-14 18:52:56,882 [WARNING] Missing *spacy* package
+2026-05-14 18:52:56,882 [WARNING] Missing *sentence-transformers* package
+2026-05-14 18:52:56,883 [WARNING] Missing *scikit-learn* package
+2026-05-14 18:52:56,883 [WARNING] Missing *networkx* package
+2026-05-14 18:52:56,884 [WARNING] Missing *numpy* package
+2026-05-14 18:52:56,885 [WARNING] Missing *fastapi* package
+2026-05-14 18:52:56,886 [WARNING] Missing *uvicorn* package
+2026-05-14 18:52:56,888 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:53:36,050 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:55:45,143 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:55:46,420 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:55:47,448 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:55:48,458 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:55:50,755 [INFO] Installing packages: ['spacy', 'sentence-transformers', 'scikit-learn', 'networkx', 'numpy', 'fastapi', 'uvicorn']
+2026-05-14 18:56:59,549 [INFO] Settings loaded.
+2026-05-14 19:03:09,936 [INFO] Settings loaded.
+2026-05-14 19:03:09,936 [INFO] Settings loaded.
+2026-05-14 19:03:10,475 [DEBUG] Using WinForms / Chromium
+2026-05-14 19:03:11,299 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-14 19:03:11,300 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-14 19:03:11,406 [DEBUG] _pywebviewready event fired
+2026-05-14 19:03:11,417 [DEBUG] loaded event fired
+2026-05-14 19:03:11,419 [DEBUG] PKG added spacy
+2026-05-14 19:03:11,419 [DEBUG] PKG added sentence-transformers
+2026-05-14 19:03:11,419 [DEBUG] PKG added scikit-learn
+2026-05-14 19:03:11,419 [DEBUG] PKG added networkx
+2026-05-14 19:03:11,419 [DEBUG] PKG added numpy
+2026-05-14 19:03:11,419 [DEBUG] PKG added pywebview
+2026-05-14 19:03:11,420 [DEBUG] PKG added fastapi
+2026-05-14 19:03:11,420 [DEBUG] PKG added uvicorn
+2026-05-14 19:03:11,420 [DEBUG] PKG added pydantic
+2026-05-14 19:03:11,423 [WARNING] Missing *fastapi* package
+2026-05-14 19:03:11,424 [DEBUG] PKG added spacy
+2026-05-14 19:03:11,424 [DEBUG] PKG added sentence-transformers
+2026-05-14 19:03:11,424 [DEBUG] PKG added scikit-learn
+2026-05-14 19:03:11,425 [DEBUG] PKG added networkx
+2026-05-14 19:03:11,425 [DEBUG] PKG added numpy
+2026-05-14 19:03:11,425 [DEBUG] PKG added pywebview
+2026-05-14 19:03:11,425 [DEBUG] PKG added fastapi
+2026-05-14 19:03:11,425 [DEBUG] PKG added uvicorn
+2026-05-14 19:03:11,425 [DEBUG] PKG added pydantic
+2026-05-14 19:03:11,428 [DEBUG] PKG added spacy
+2026-05-14 19:03:11,428 [DEBUG] PKG added sentence-transformers
+2026-05-14 19:03:11,428 [DEBUG] PKG added scikit-learn
+2026-05-14 19:03:11,429 [DEBUG] PKG added networkx
+2026-05-14 19:03:11,429 [DEBUG] PKG added numpy
+2026-05-14 19:03:11,429 [DEBUG] PKG added pywebview
+2026-05-14 19:03:11,429 [DEBUG] PKG added fastapi
+2026-05-14 19:03:11,429 [DEBUG] PKG added uvicorn
+2026-05-14 19:03:11,429 [DEBUG] PKG added pydantic
+2026-05-14 19:03:11,432 [WARNING] Missing *fastapi* package
+2026-05-14 19:03:11,435 [INFO] Installing packages: ['fastapi']
+2026-05-14 19:03:13,212 [DEBUG] PKG added spacy
+2026-05-14 19:03:13,213 [DEBUG] PKG added sentence-transformers
+2026-05-14 19:03:13,213 [DEBUG] PKG added scikit-learn
+2026-05-14 19:03:13,213 [DEBUG] PKG added networkx
+2026-05-14 19:03:13,213 [DEBUG] PKG added numpy
+2026-05-14 19:03:13,213 [DEBUG] PKG added pywebview
+2026-05-14 19:03:13,214 [DEBUG] PKG added fastapi
+2026-05-14 19:03:13,214 [DEBUG] PKG added uvicorn
+2026-05-14 19:03:13,214 [DEBUG] PKG added pydantic
+2026-05-14 19:25:52,539 [INFO] Settings loaded.

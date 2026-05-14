@@ -1,8 +1,14 @@
 from app.config.config import get_config
 from app.core.i18n import i18n
 from app.dependencies.check import check_dependencies, get_dependencies
+from app.dependencies.install import _install_packages
 
 MODULE = "dependencies"
+window = None
+
+def set_window(_window):
+    global window
+    window = _window
 
 class Api:
     def __init__(self):
@@ -39,3 +45,6 @@ class Api:
     def reload_language(self):
         self.i18n.reload()
         return self.i18n.get_translations(MODULE)
+
+    def install_package(self):
+        return _install_packages(check_dependencies()[1], window)

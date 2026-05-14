@@ -16,7 +16,7 @@ function setStep(stage) {
     PROGRESSLOG.dataset.key = `stage_log_${stage}`;
 }
 
-function addPkgLog(pkgs) {
+async function addPkgLog(pkgs) {
     // <span class="log"><input type="checkbox" disabled></input><lang>hbfdhbdhh</lang></span>
     pkgs.forEach(pkg => {
         var span = document.createElement("span");
@@ -38,19 +38,47 @@ function addPkgLog(pkgs) {
     });
 }
 
-function loadStage(stage) {
-    setStep(stage[0])
+async function checkPkgLog(pkg, state) {
+    var lang = document.querySelector(`#${pkg} lang`)
+    if (state === 0) lang.style.fontWeight = "bold";
+    if (state === 1) {
+        lang.style.fontStyle = "italic"
+        lang.style.fontWeight = "unset"
+    };
+    if (state === -1) {
+        lang.style.fontStyle = "normal"
+        lang.style.fontWeight = "unset"
+        lang.style.color = "red";
+    };
 
-    if (stage[0] == 0) {
+    var input = document.querySelector(`#${pkg} input`)
+    if (state === 1) input.checked = true;
+}
+
+// Export to Python
+window.checkPkgLog = checkPkgLog
+
+async function loadStage() {
+    STAGE = await window.pywebview.api.get_stage();
+    await setStep(STAGE[0])
+
+    if (STAGE[0] === 0) {
         PKGSECTION.style.display = "flex";
-        addPkgLog(stage[1])
+        await addPkgLog(STAGE[1])
+
+        window.pywebview.api.install_package();
+    }
+
+    if (STAGE[0] === 1) {
+        PKGSECTION.style.display = "none";
     }
 }
+
+window.loadStage = loadStage;
 
 
 // ! Start Eventi
 window.addEventListener("pywebviewready", async () => {
     await loadLanguage();
-    STAGE = await window.pywebview.api.get_stage();
-    loadStage(STAGE);
+    loadStage();
 });
