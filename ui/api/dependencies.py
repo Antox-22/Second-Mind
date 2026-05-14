@@ -1,6 +1,6 @@
 from app.config.config import get_config
 from app.core.i18n import i18n
-from app.dependencies.check import check_dependencies
+from app.dependencies.check import check_dependencies, get_dependencies
 
 MODULE = "dependencies"
 
@@ -25,13 +25,17 @@ class Api:
 
         if self.config.app.language and self.config.user.name:
             if (self._missing_pack[0]):
-                return 2
-            else: return 3
+                return (2, None)
+            else: return (3, None)
 
         if (not self._missing_pack[0]):
-            return 1
+            return (1, self._missing_pack[1])
 
-        return 0
+        return (0, get_dependencies())
 
     def get_language(self):
+        return self.i18n.get_translations(MODULE)
+
+    def reload_language(self):
+        self.i18n.reload()
         return self.i18n.get_translations(MODULE)

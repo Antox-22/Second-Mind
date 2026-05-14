@@ -36,7 +36,7 @@ def check_dependencies():
         except PackageNotFoundError:
             _missing.append(_pkg)
 
-            # DEBUG: Print missing package
-            log.debug(f"Missing *{_pkg}* package")
+            # WARNING: Print missing package
+            log.warning(f"Missing *{_pkg}* package")
 
     return (len(_missing) != 0, _missing)

@@ -43,7 +43,7 @@ class Config:
                 json.dump(self.config.model_dump(), f, indent=2)
 
             # DEBUG: Creata settings file
-            log.debug("Create settings file")
+            log.info("Create settings file")
         else:
             with open(ROOT / "app" / "config" / "settings.json", "r") as f:
                 self._config = json.load(f)
@@ -52,7 +52,7 @@ class Config:
         config = self
 
         # DEBUG: Config loaded
-        log.debug("Settings loaded.")
+        log.info("Settings loaded.")
 
     @safe()
     def _save(self):

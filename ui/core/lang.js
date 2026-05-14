@@ -1,13 +1,20 @@
+export let translation = {};
+
 export async function loadLanguage() {
     var langsTags = document.querySelectorAll("lang");
 
-    var translation = await window.pywebview.api.get_language();
+    translation = await window.pywebview.api.get_language();
 
     langsTags.forEach(element => {
-        var key = element.textContent;
+        var key = element.dataset.key;
         var value = translation[key];
 
-        element.textContent = value;
+        element.textContent = value ?? `[${key}]`;
 
     });
+}
+
+export async function reloadLanguage() {
+    await window.pywebview.api.reload_language();
+    await loadLanguage();
 }

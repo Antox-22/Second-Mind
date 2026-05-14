@@ -9,13 +9,15 @@ class i18n:
     def __init__(self):
         self.config = Config()
         self.lang = self.config.language if self.config.language else DEFAULT_LANGUAGE
-        self.translations: dict = self._load(self.lang)
+        self.translations: dict = None
+
+        self._load(self.lang)
 
     @safe()
     def _load(self, lang: str, **_):
         path = ROOT / "app" / "lang" / lang / "strings.json"
         with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
+            self.translations = json.load(f)
 
     def t(self, module: str, key: str):
         _mod = self.translations.get(module)
