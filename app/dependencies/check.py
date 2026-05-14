@@ -39,7 +39,4 @@ def check_dependencies():
             # DEBUG: Print missing package
             log.debug(f"Missing *{_pkg}* package")
 
-    return (not _missing, _missing)
-
-if __name__ == "__main__":
-    check_dependencies()
+    return (len(_missing) != 0, _missing)

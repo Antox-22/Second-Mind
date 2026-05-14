@@ -72,6 +72,3 @@ def get_config():
         config = Config()
 
     return config
-
-if __name__ == "__main__":
-    print(get_config().config.app.version)

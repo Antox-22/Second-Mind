@@ -12,14 +12,18 @@ class i18n:
         self.translations: dict = self._load(self.lang)
 
     @safe()
-    def _load(self, lang):
-        path = ROOT / "app" / lang / "strings.json"
+    def _load(self, lang: str, **_):
+        path = ROOT / "app" / "lang" / lang / "strings.json"
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
 
-    def t(self, module, key):
+    def t(self, module: str, key: str):
         _mod = self.translations.get(module)
         return _mod.get(key)
+
+    def get_translations(self, module: str):
+        return self.translations.get(module, None)
+
 
     def reload(self):
         self._load(self.lang)
