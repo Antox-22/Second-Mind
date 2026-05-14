@@ -10,6 +10,7 @@ var STAGE = 0;
 // Add step progress bar
 function setStep(stage) {
     var percent = (stage / MAXSTAGE) * 100;
+    if (percent === 0) percent = 10
     PROGRESS.style.width = percent + "%";
 
     PROGRESSLOG.textContent = translation[`stage_log_${stage}`] ?? `[stage_log_${stage}]`;
@@ -44,11 +45,13 @@ async function checkPkgLog(pkg, state) {
     if (state === 1) {
         lang.style.fontStyle = "italic"
         lang.style.fontWeight = "unset"
+        lang.textContent = format(translation[`pkg_log_installed`] ?? "[pkg_log_installed]", {pkg: pkg});
     };
     if (state === -1) {
         lang.style.fontStyle = "normal"
         lang.style.fontWeight = "unset"
         lang.style.color = "red";
+        lang.textContent = format(translation[`pkg_log_error`] ?? "[pkg_log_error]", {pkg: pkg});
     };
 
     var input = document.querySelector(`#${pkg} input`)
@@ -59,6 +62,7 @@ async function checkPkgLog(pkg, state) {
 window.checkPkgLog = checkPkgLog
 
 async function loadStage() {
+    await new Promise(r => setTimeout(r, 2000));
     STAGE = await window.pywebview.api.get_stage();
     await setStep(STAGE[0])
 

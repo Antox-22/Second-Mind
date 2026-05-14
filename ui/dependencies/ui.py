@@ -2,6 +2,7 @@ from app.core.path import ROOT
 from ui.api.dependencies import Api, set_window
 import webview
 
+
 html = ROOT / "ui" / "dependencies" / "index.html"
 
 window = webview.create_window(

@@ -7,7 +7,7 @@ import sys
 
 
 @safe()
-def _install_packages(packages: list[str], window,  **_) -> None:
+def install_packages(packages: list[str], window,  **_) -> None:
     """
     State
     0: Installing
@@ -16,7 +16,7 @@ def _install_packages(packages: list[str], window,  **_) -> None:
     """
     if not packages:
         return
-    
+
     _missing = False
 
     for pkg in packages:
@@ -31,7 +31,11 @@ def _install_packages(packages: list[str], window,  **_) -> None:
         ]
 
         log.info("Installing packages: %s", packages)
-        subprocess.check_call(cmd)
+        try:
+            subprocess.check_call(cmd)
+        except:
+            log.exception("Error installing package: %s", pkg)
+            window.evaluate_js(f"window.checkPkgLog(\"{pkg}\", -1)")
 
         try:
             distribution(pkg)

@@ -1,8 +1,5 @@
 from app.core.path import ROOT
 import logging as log
-log.basicConfig(level=log.DEBUG)
-
-import logging as log
 
 logger = log.getLogger()
 logger.setLevel(log.DEBUG)

@@ -4,6 +4,8 @@
         "stage_log_0": "Ricerca delle dipendenze ...",
         "stage_log_1": "Configurazione della lingua ...",
         "pkg_title": "Installazione packetti",
-        "pkg_log": "Installo {pkg} ..."
+        "pkg_log": "Installo {pkg} ...",
+        "pkg_log_installed": "Installato {pkg} ...",
+        "pkg_log_error": "Errore {pkg} ..."
     }
 }
