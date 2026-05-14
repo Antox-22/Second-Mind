@@ -1,7 +1,8 @@
 from app.core.path import ROOT
 import webview
 
-def start_ui(_func, _js_api):
+def start_ui(_js_api):
+    html = ROOT / "ui" / "dependencies" / "index.html"
     windows = webview.create_window(
         title = "Second Mind - Package Manager",
         js_api = _js_api,
@@ -9,13 +10,12 @@ def start_ui(_func, _js_api):
         frameless=True,
         easy_drag=True,
         resizable=False,
-
-        # DEBUG: TEST URL
-        url="https://example.org"
+        url= "file://" + html
     )
 
     webview.start(
-        func=_func,
         args=(windows),
         icon=ROOT / "assets" / "icons" / "icon.ico"
     )
+
+start_ui(None)
