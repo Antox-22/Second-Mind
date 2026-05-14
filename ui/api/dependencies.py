@@ -31,13 +31,13 @@ class Api:
 
         if self.config.app.language and self.config.user.name:
             if (self._missing_pack[0]):
-                return (2, None)
+                return (2, self._missing_pack[1])
             else: return (3, None)
 
         if (not self._missing_pack[0]):
-            return (1, self._missing_pack[1])
+            return (1, None)
 
-        return (0, get_dependencies())
+        return (0, self._missing_pack[1])
 
     def get_language(self):
         return self.i18n.get_translations(MODULE)

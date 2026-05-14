@@ -6,7 +6,7 @@ html = ROOT / "ui" / "dependencies" / "index.html"
 
 window = webview.create_window(
     title = "Second Mind - Package Manager",
-    min_size=(700, 400),
+    min_size=(500, 400),
     js_api=Api(),
     frameless=True,
     easy_drag=True,
@@ -22,4 +22,5 @@ def start_ui():
         debug=True
     )
 
-start_ui()
+if __name__ == "__main__":
+    start_ui()
