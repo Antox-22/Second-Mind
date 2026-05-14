@@ -18,3 +18,9 @@ export async function reloadLanguage() {
     await window.pywebview.api.reload_language();
     await loadLanguage();
 }
+
+export function format(str, values) {
+    return str.replace(/\{(.*?)\}/g, (_, key) => {
+        return values[key] ?? `{${key}}`;
+    });
+}
