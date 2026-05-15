@@ -2,8 +2,10 @@ import { format, loadLanguage, reloadLanguage, translation } from "../core/lang.
 
 const PROGRESS = document.querySelector(".progress");
 const PROGRESSLOG = document.querySelector(".footer .log lang");
-const PKGSECTION = document.querySelector(".pkg-section")
-const PKGCARD = document.querySelector(".pkg-section .card")
+const PKGSECTION = document.querySelector(".section")
+const PKGCARD = document.querySelector(".section #pkg")
+const CONFCARD = document.querySelector(".section #conf")
+const LANGSELECT = document.querySelector("#language")
 const MAXSTAGE = 4;
 var STAGE = 0;
 
@@ -39,6 +41,18 @@ async function addPkgLog(pkgs) {
     });
 }
 
+async function addLangSelect(lngs) {
+    lngs.forEach(element => {
+        // <option value="it" selected>Italiano</option>
+        var option = document.createElement("option")
+        option.value = element[1]
+        option.textContent = element[0]
+
+        LANGSELECT.appendChild(option)
+
+    });
+}
+
 async function checkPkgLog(pkg, state) {
     var lang = document.querySelector(`#${pkg} lang`)
     if (state === 0) lang.style.fontWeight = "bold";
@@ -62,19 +76,27 @@ async function checkPkgLog(pkg, state) {
 window.checkPkgLog = checkPkgLog
 
 async function loadStage() {
-    await new Promise(r => setTimeout(r, 2000));
+    await new Promise(r => setTimeout(r, 500));
     STAGE = await window.pywebview.api.get_stage();
     await setStep(STAGE[0])
 
     if (STAGE[0] === 0) {
-        PKGSECTION.style.display = "flex";
+        PKGCARD.style.display = "flex";
+        CONFCARD.style.display = "none";
         await addPkgLog(STAGE[1])
 
         window.pywebview.api.install_package();
     }
 
     if (STAGE[0] === 1) {
-        PKGSECTION.style.display = "none";
+        PKGCARD.style.display = "none";
+        CONFCARD.style.display = "flex";
+
+        var lngs = await window.pywebview.api.get_languages();
+
+        console.log(lngs)
+
+        await addLangSelect(lngs);
     }
 }
 

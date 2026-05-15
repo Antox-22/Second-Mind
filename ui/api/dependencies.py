@@ -44,6 +44,9 @@ class Api:
     def get_language(self):
         return self.i18n.get_translations(MODULE)
 
+    def get_languages(self):
+        return self.i18n.get_languages()
+
     def reload_language(self):
         self.i18n.reload()
         return self.i18n.get_translations(MODULE)

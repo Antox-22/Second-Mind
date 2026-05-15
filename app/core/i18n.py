@@ -1,7 +1,7 @@
 from app.config.config import Config
 from app.core.path import ROOT
 from app.core.error import safe
-import json
+import json, os
 
 DEFAULT_LANGUAGE = "it"
 
@@ -19,6 +19,8 @@ class i18n:
         with open(path, "r", encoding="utf-8") as f:
             self.translations = json.load(f)
 
+        return self.translations
+
     def t(self, module: str, key: str):
         _mod = self.translations.get(module)
         return _mod.get(key)
@@ -26,6 +28,19 @@ class i18n:
     def get_translations(self, module: str):
         return self.translations.get(module, None)
 
-
     def reload(self):
-        self._load(self.lang)
+        return self._load(self.lang)
+
+    @safe()
+    def get_languages(self):
+        _list = [f for f in os.listdir(ROOT / "app" / "lang") if os.path.isdir(f)]
+        _lngs = []
+
+        for p in _list:
+            try:
+                with open(p + "/config.json", "r") as f:
+                    _js = json.load(f)
+                    _lngs.append((_js["name"], _js["prefix"]))
+            except: pass
+
+        return _lngs
