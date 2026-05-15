@@ -3,11 +3,14 @@
         "title": "Second Mind - Gestore installazioni",
         "stage_log_0": "Ricerca delle dipendenze ...",
         "stage_log_1": "Configurazione del utente ...",
+        "stage_log_2": "Ricerca delle dipendenze ...",
+        "stage_log_4": "Verificando l'ultimo aggiornamento ...",
         "pkg_title": "Installazione packetti",
         "pkg_log": "Installo {pkg} ...",
         "pkg_log_installed": "Installato {pkg} ...",
         "pkg_log_error": "Errore {pkg} ...",
         "conf_title": "Completa la configurazione",
-        "name": "Nome", "age": "Età", "language": "Lingua"
+        "name": "Nome", "age": "Età", "language": "Lingua",
+        "submit": "Invia"
     }
 }

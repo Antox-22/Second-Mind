@@ -25,30 +25,34 @@
             <span class="title"><lang data-key="conf_title">conf_title</lang></span>
             <div class="input-field">
     
-    <div class="input-row">
-        <div class="input-group name-group">
-            <label for="name" id="name-label"><lang data-key="name">name</lang></label>
-            <input type="text" id="name" placeholder="Es. Paolo">
-        </div>
+                <div class="input-row">
+                    <div class="input-group name-group">
+                        <label for="name" id="name-label"><lang data-key="name">name</lang></label>
+                        <input type="text" id="name" placeholder="Es. Paolo">
+                    </div>
 
-        <div class="input-group age-group">
-            <label for="age" id="age-label"><lang data-key="age">age</lang></label>
-            <input type="number" 
-                   id="age" 
-                   min="0" 
-                   max="99" 
-                   oninput="if(this.value > 99) this.value = 99; if(this.value < 0) this.value = 0;" 
-                   placeholder="22">
-        </div>
-    </div>
+                    <div class="input-group age-group">
+                        <label for="age" id="age-label"><lang data-key="age">age</lang></label>
+                        <input type="number"
+                            id="age"
+                            min="0"
+                            max="99"
+                            oninput="if(this.value > 99) this.value = 99; if(this.value < 0) this.value = 0;" 
+                            placeholder="22">
+                    </div>
+                </div>
 
-    <div class="input-group">
-        <label for="language" id="language-label"><lang data-key="language">language</lang></label>
-        <select id="language">
-        </select>
-    </div>
+                <div class="input-group">
+                    <label for="language" id="language-label"><lang data-key="language">language</lang></label>
+                    <select id="language">
+                    </select>
+                    <div class="btn-submit">
 
-</div>
+                        <button id="submit"><lang data-key="submit">submit</lang></button>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </div>

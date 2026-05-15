@@ -1,4 +1,4 @@
-from app.config.config import Config
+from app.config.config import get_config
 from app.core.path import ROOT
 from app.core.error import safe
 import json, os
@@ -7,15 +7,16 @@ DEFAULT_LANGUAGE = "it"
 
 class i18n:
     def __init__(self):
-        self.config = Config()
-        self.lang = self.config.language if self.config.language else DEFAULT_LANGUAGE
+        self.config = get_config().config
+        self.lang = self.config.app.language if self.config.app.language else DEFAULT_LANGUAGE
         self.translations: dict = None
 
-        self._load(self.lang)
+        self._load()
 
     @safe()
-    def _load(self, lang: str, **_):
-        path = ROOT / "app" / "lang" / lang / "strings.json"
+    def _load(self, **_):
+        self.lang = self.config.app.language if self.config.app.language else DEFAULT_LANGUAGE
+        path = ROOT / "app" / "lang" / self.lang / "strings.json"
         with open(path, "r", encoding="utf-8") as f:
             self.translations = json.load(f)
 
@@ -29,16 +30,16 @@ class i18n:
         return self.translations.get(module, None)
 
     def reload(self):
-        return self._load(self.lang)
+        return self._load()
 
     @safe()
     def get_languages(self):
-        _list = [f for f in os.listdir(ROOT / "app" / "lang") if os.path.isdir(f)]
+        _list = [ROOT / "app" / "lang" / f for f in os.listdir(ROOT / "app" / "lang") if os.path.isdir(ROOT / "app" / "lang" / f)]
         _lngs = []
 
         for p in _list:
             try:
-                with open(p + "/config.json", "r") as f:
+                with open(p / "config.json", "r") as f:
                     _js = json.load(f)
                     _lngs.append((_js["name"], _js["prefix"]))
             except: pass

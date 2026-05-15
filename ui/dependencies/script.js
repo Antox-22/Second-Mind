@@ -6,6 +6,7 @@ const PKGSECTION = document.querySelector(".section")
 const PKGCARD = document.querySelector(".section #pkg")
 const CONFCARD = document.querySelector(".section #conf")
 const LANGSELECT = document.querySelector("#language")
+const SUBMITCONF = document.querySelector("#submit")
 const MAXSTAGE = 4;
 var STAGE = 0;
 
@@ -80,7 +81,7 @@ async function loadStage() {
     STAGE = await window.pywebview.api.get_stage();
     await setStep(STAGE[0])
 
-    if (STAGE[0] === 0) {
+    if (STAGE[0] === 0 || STAGE[0] === 2) {
         PKGCARD.style.display = "flex";
         CONFCARD.style.display = "none";
         await addPkgLog(STAGE[1])
@@ -98,10 +99,27 @@ async function loadStage() {
 
         await addLangSelect(lngs);
     }
+
+    if (STAGE[0] === 3) {
+        PKGCARD.style.display = "none";
+        CONFCARD.style.display = "none";
+
+        await reloadLanguage();
+    }
 }
 
 window.loadStage = loadStage;
 
+
+SUBMITCONF.addEventListener("click", async () => {
+    var name = document.querySelector("#name").value
+    var age = document.querySelector("#age").value
+    var language = LANGSELECT.value
+    if (name && age) {
+        await window.pywebview.api.save_config(name, age, language);
+        await loadStage();
+    }
+})
 
 // ! Start Eventi
 window.addEventListener("pywebviewready", async () => {

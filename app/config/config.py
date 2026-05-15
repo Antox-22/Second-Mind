@@ -24,7 +24,6 @@ class _Config(BaseModel):
 
 class Config:
     def __init__(self):
-        self.language = None
         self.config: _Config = None
 
         # Load
@@ -55,8 +54,8 @@ class Config:
         log.info("Settings loaded.")
 
     @safe()
-    def _save(self):
-        with open(ROOT / "config" / "settings.json", "w") as f:
+    def _save(self, **_):
+        with open(ROOT / "app" / "config" / "settings.json", "w") as f:
             f.write(self.config.model_dump_json(indent=2))
 
         # DEBUG: Config saved

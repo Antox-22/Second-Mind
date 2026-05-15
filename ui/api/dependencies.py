@@ -25,7 +25,7 @@ class Api:
             - 0: Full installation required; the application has just been installed.
             - 1: Dependencies have been installed; proceed with standard configuration.
             - 2: Configuration has been completed, but dependencies are missing.
-            - 3: Check only for available updates.
+            - 4: Check only for available updates.
         """
         self._missing_pack = check_dependencies()
 
@@ -34,7 +34,7 @@ class Api:
         if self.config.app.language and self.config.user.name:
             if (self._missing_pack[0]):
                 return (2, self._missing_pack[1])
-            else: return (3, None)
+            else: return (4, None)
 
         if (not self._missing_pack[0]):
             return (1, None)
@@ -53,3 +53,10 @@ class Api:
 
     def install_package(self):
         return install_packages(check_dependencies()[1], window)
+
+    def save_config(self, name, age, lang):
+        self.config.user.name = name
+        self.config.user.age = int(age)
+        self.config.app.language = lang
+
+        self._config.save_and_reload()
