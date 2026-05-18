@@ -1,6 +1,7 @@
 from app.core.log import log
 from app.core.path import *
 from importlib.metadata import distribution, PackageNotFoundError
+import spacy
 
 def get_dependencies():
     _dependencies = []

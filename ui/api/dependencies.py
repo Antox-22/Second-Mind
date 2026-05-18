@@ -1,11 +1,19 @@
-from app.config.config import get_config
+from app.config.config import get_config, VERSION_APP
 from app.core.i18n import i18n
 from app.dependencies.check import check_dependencies, get_dependencies
 from app.dependencies.install import install_packages
+from enum import Enum
+from webview import Window
 
 MODULE = "dependencies"
-window = None
+window: Window = None
 
+class Stage(Enum):
+    FULL_INSTALL = 0
+    ONLY_CONFIG = 1
+    DEPENDENCIES = 2
+    SPACY = 3
+    CHECK_UPDATE = 4
 
 
 def set_window(_window):
@@ -29,17 +37,17 @@ class Api:
         """
         self._missing_pack = check_dependencies()
 
-        print(self._missing_pack)
-
         if self.config.app.language and self.config.user.name:
             if (self._missing_pack[0]):
-                return (2, self._missing_pack[1])
-            else: return (4, None)
+                window.resize(800, 600)
+                return (Stage.DEPENDENCIES.value, self._missing_pack[1])
+            else: return (Stage.CHECK_UPDATE.value, VERSION_APP)
 
+        window.resize(800, 600)
         if (not self._missing_pack[0]):
-            return (1, None)
+            return (Stage.ONLY_CONFIG.value, None)
 
-        return (0, self._missing_pack[1])
+        return (Stage.FULL_INSTALL.value, self._missing_pack[1])
 
     def get_language(self):
         return self.i18n.get_translations(MODULE)

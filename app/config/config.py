@@ -5,6 +5,7 @@ from pydantic import BaseModel
 from app.core.log import log
 import json
 
+
 VERSION_APP = " 0.1.5"
 NAME_APP = "Second Mind"
 config = None

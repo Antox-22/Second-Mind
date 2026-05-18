@@ -11,6 +11,8 @@
         "pkg_log_error": "Errore {pkg} ...",
         "conf_title": "Completa la configurazione",
         "name": "Nome", "age": "Età", "language": "Lingua",
-        "submit": "Invia"
+        "submit": "Invia",
+        "oldVersion": "VERSIONE ATTUALE",
+        "newVersion": "NUOVA VERSIONE"
     }
 }

@@ -33,7 +33,7 @@ class i18n:
         return self._load()
 
     @safe()
-    def get_languages(self):
+    def get_languages(self, **_):
         _list = [ROOT / "app" / "lang" / f for f in os.listdir(ROOT / "app" / "lang") if os.path.isdir(ROOT / "app" / "lang" / f)]
         _lngs = []
 

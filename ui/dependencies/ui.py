@@ -7,8 +7,9 @@ html = ROOT / "ui" / "dependencies" / "index.html"
 
 window = webview.create_window(
     title = "Second Mind - Package Manager",
-    min_size=(500, 400),
     js_api=Api(),
+    width=500,
+    height=300,
     frameless=True,
     easy_drag=True,
     resizable=False,
@@ -18,7 +19,7 @@ window = webview.create_window(
 def start_ui():
     webview.start(
         func=set_window,
-        args=(window),
+        args=(window,),
         icon=ROOT / "assets" / "icons" / "icon.ico",
         debug=True
     )

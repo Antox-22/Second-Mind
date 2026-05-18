@@ -7,6 +7,10 @@ const PKGCARD = document.querySelector(".section #pkg")
 const CONFCARD = document.querySelector(".section #conf")
 const LANGSELECT = document.querySelector("#language")
 const SUBMITCONF = document.querySelector("#submit")
+const ICON = document.querySelector(".icon")
+const HEADER = document.querySelector(".header")
+const VERSIONSECTION = document.querySelector(".version-section")
+const OLDVERSION = document.querySelector("#oldVersionNumber")
 const MAXSTAGE = 4;
 var STAGE = 0;
 
@@ -54,6 +58,16 @@ async function addLangSelect(lngs) {
     });
 }
 
+// TODO:
+function setCorrectVersion(versionName) {
+    const box = document.getElementById('newVersionBox');
+    const numberSpan = document.getElementById('newVersionNumber');
+
+    // numberSpan.textContent = versionName;
+
+    box.classList.remove('loading');
+}
+
 async function checkPkgLog(pkg, state) {
     var lang = document.querySelector(`#${pkg} lang`)
     if (state === 0) lang.style.fontWeight = "bold";
@@ -83,7 +97,9 @@ async function loadStage() {
 
     if (STAGE[0] === 0 || STAGE[0] === 2) {
         PKGCARD.style.display = "flex";
+        VERSIONSECTION.style.display = "none";
         CONFCARD.style.display = "none";
+        HEADER.style.display = "flex";
         await addPkgLog(STAGE[1])
 
         window.pywebview.api.install_package();
@@ -91,7 +107,9 @@ async function loadStage() {
 
     if (STAGE[0] === 1) {
         PKGCARD.style.display = "none";
+        VERSIONSECTION.style.display = "none";
         CONFCARD.style.display = "flex";
+        HEADER.style.display = "flex";
 
         var lngs = await window.pywebview.api.get_languages();
 
@@ -103,8 +121,19 @@ async function loadStage() {
     if (STAGE[0] === 3) {
         PKGCARD.style.display = "none";
         CONFCARD.style.display = "none";
+        VERSIONSECTION.style.display = "none";
+        HEADER.style.display = "flex";
 
         await reloadLanguage();
+    }
+
+    if (STAGE[0] === 4) {
+        VERSIONSECTION.style.display = "flex";
+        PKGCARD.style.display = "none";
+        CONFCARD.style.display = "none";
+        HEADER.style.display = "none";
+
+        OLDVERSION.textContent = STAGE[1];
     }
 }
 
