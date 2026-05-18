@@ -1,7 +1,7 @@
 from app.config.config import get_config, VERSION_APP
 from app.core.i18n import i18n
 from app.dependencies.check import check_dependencies, check_spacy_model
-from app.dependencies.install import install_packages
+from app.dependencies.install import install_packages, install_spacy_model
 from enum import Enum
 from webview import Window
 
@@ -65,6 +65,9 @@ class Api:
 
     def install_package(self):
         return install_packages(check_dependencies()[1], window)
+
+    def install_spacy_model(self):
+        return install_spacy_model(self.i18n.lang_setting.get("spacy-model"))
 
     def save_config(self, name, age, lang):
         self.config.user.name = name
