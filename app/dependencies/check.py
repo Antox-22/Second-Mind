@@ -4,7 +4,7 @@ from importlib.metadata import distribution, PackageNotFoundError
 from app.core.i18n import i18n
 import spacy
 
-def get_dependencies():
+def get_dependencies()  -> list[str]:
     _dependencies = []
 
     with open(ROOT / "requirements.txt", "r") as file:
@@ -27,7 +27,7 @@ def get_dependencies():
 
     return _dependencies
 
-def check_dependencies():
+def check_dependencies()  -> tuple[bool, list[str]]:
     _dependencies = get_dependencies()
     _missing = []
 
@@ -42,7 +42,7 @@ def check_dependencies():
 
     return (len(_missing) != 0, _missing)
 
-def check_spacy_model():
+def check_spacy_model() -> bool:
     _model = i18n().lang_setting.get("spacy-model")
 
     if not _model: return False
