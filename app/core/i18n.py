@@ -10,6 +10,7 @@ class i18n:
         self.config = get_config().config
         self.lang = self.config.app.language if self.config.app.language else DEFAULT_LANGUAGE
         self.translations: dict = None
+        self.lang_setting:dict = None
 
         self._load()
 
@@ -17,8 +18,13 @@ class i18n:
     def _load(self, **_):
         self.lang = self.config.app.language if self.config.app.language else DEFAULT_LANGUAGE
         path = ROOT / "app" / "lang" / self.lang / "strings.json"
+
         with open(path, "r", encoding="utf-8") as f:
             self.translations = json.load(f)
+
+        path = ROOT / "app" / "lang" / self.lang / "config.json"
+        with open(path, "r", encoding="utf-8") as f:
+            self.lang_setting = json.load(f)
 
         return self.translations
 
