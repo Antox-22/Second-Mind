@@ -1,6 +1,6 @@
 from app.config.config import get_config, VERSION_APP
 from app.core.i18n import i18n
-from app.dependencies.check import check_dependencies, get_dependencies
+from app.dependencies.check import check_dependencies, check_spacy_model
 from app.dependencies.install import install_packages
 from enum import Enum
 from webview import Window
@@ -33,6 +33,7 @@ class Api:
             - 0: Full installation required; the application has just been installed.
             - 1: Dependencies have been installed; proceed with standard configuration.
             - 2: Configuration has been completed, but dependencies are missing.
+            - 3: Install Spacy Model.
             - 4: Check only for available updates.
         """
         self._missing_pack = check_dependencies()
@@ -41,7 +42,10 @@ class Api:
             if (self._missing_pack[0]):
                 window.resize(800, 600)
                 return (Stage.DEPENDENCIES.value, self._missing_pack[1])
-            else: return (Stage.CHECK_UPDATE.value, VERSION_APP)
+            else:
+                if (check_spacy_model()): return (Stage.CHECK_UPDATE.value, VERSION_APP)
+                window.resize(800, 600)
+                return (Stage.SPACY.value, self.i18n.lang_setting.get("spacy-model"))
 
         window.resize(800, 600)
         if (not self._missing_pack[0]):

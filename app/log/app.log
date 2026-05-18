@@ -3434,3 +3434,48 @@ FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Utente\\Docu
 2026-05-18 21:57:48,956 [DEBUG] PKG added fastapi
 2026-05-18 21:57:48,956 [DEBUG] PKG added uvicorn
 2026-05-18 21:57:48,956 [DEBUG] PKG added pydantic
+2026-05-18 22:44:06,474 [INFO] Settings loaded.
+2026-05-18 22:44:06,772 [DEBUG] Using WinForms / Chromium
+2026-05-18 22:44:07,491 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-18 22:44:07,491 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-18 22:44:07,502 [DEBUG] _pywebviewready event fired
+2026-05-18 22:44:07,510 [DEBUG] loaded event fired
+2026-05-18 22:44:08,028 [DEBUG] PKG added spacy
+2026-05-18 22:44:08,028 [DEBUG] PKG added sentence-transformers
+2026-05-18 22:44:08,028 [DEBUG] PKG added scikit-learn
+2026-05-18 22:44:08,028 [DEBUG] PKG added networkx
+2026-05-18 22:44:08,028 [DEBUG] PKG added numpy
+2026-05-18 22:44:08,028 [DEBUG] PKG added pywebview
+2026-05-18 22:44:08,028 [DEBUG] PKG added fastapi
+2026-05-18 22:44:08,028 [DEBUG] PKG added uvicorn
+2026-05-18 22:44:08,028 [DEBUG] PKG added pydantic
+2026-05-18 22:44:46,530 [INFO] Settings loaded.
+2026-05-18 22:44:46,829 [DEBUG] Using WinForms / Chromium
+2026-05-18 22:44:47,513 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-18 22:44:47,514 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-18 22:44:47,527 [DEBUG] _pywebviewready event fired
+2026-05-18 22:44:47,536 [DEBUG] loaded event fired
+2026-05-18 22:44:48,039 [DEBUG] PKG added spacy
+2026-05-18 22:44:48,040 [DEBUG] PKG added sentence-transformers
+2026-05-18 22:44:48,040 [DEBUG] PKG added scikit-learn
+2026-05-18 22:44:48,040 [DEBUG] PKG added networkx
+2026-05-18 22:44:48,040 [DEBUG] PKG added numpy
+2026-05-18 22:44:48,040 [DEBUG] PKG added pywebview
+2026-05-18 22:44:48,040 [DEBUG] PKG added fastapi
+2026-05-18 22:44:48,040 [DEBUG] PKG added uvicorn
+2026-05-18 22:44:48,040 [DEBUG] PKG added pydantic
+2026-05-18 22:45:18,284 [INFO] Settings loaded.
+2026-05-18 22:45:18,583 [DEBUG] Using WinForms / Chromium
+2026-05-18 22:45:23,723 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-18 22:45:23,724 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-18 22:45:23,735 [DEBUG] _pywebviewready event fired
+2026-05-18 22:45:23,743 [DEBUG] loaded event fired
+2026-05-18 22:45:24,254 [DEBUG] PKG added spacy
+2026-05-18 22:45:24,255 [DEBUG] PKG added sentence-transformers
+2026-05-18 22:45:24,255 [DEBUG] PKG added scikit-learn
+2026-05-18 22:45:24,255 [DEBUG] PKG added networkx
+2026-05-18 22:45:24,255 [DEBUG] PKG added numpy
+2026-05-18 22:45:24,255 [DEBUG] PKG added pywebview
+2026-05-18 22:45:24,255 [DEBUG] PKG added fastapi
+2026-05-18 22:45:24,255 [DEBUG] PKG added uvicorn
+2026-05-18 22:45:24,255 [DEBUG] PKG added pydantic

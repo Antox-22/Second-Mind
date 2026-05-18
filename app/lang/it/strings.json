@@ -4,6 +4,7 @@
         "stage_log_0": "Ricerca delle dipendenze ...",
         "stage_log_1": "Configurazione del utente ...",
         "stage_log_2": "Ricerca delle dipendenze ...",
+        "stage_log_3": "Installazione del modello Spacy ...",
         "stage_log_4": "Verificando l'ultimo aggiornamento ...",
         "pkg_title": "Installazione packetti",
         "pkg_log": "Installo {pkg} ...",

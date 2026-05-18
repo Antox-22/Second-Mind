@@ -1,6 +1,7 @@
 from app.core.log import log
 from app.core.path import *
 from importlib.metadata import distribution, PackageNotFoundError
+from app.core.i18n import i18n
 import spacy
 
 def get_dependencies():
@@ -40,3 +41,13 @@ def check_dependencies():
             log.warning(f"Missing *{_pkg}* package")
 
     return (len(_missing) != 0, _missing)
+
+def check_spacy_model():
+    _model = i18n().lang_setting.get("spacy-model")
+
+    if not _model: return False
+
+    try:
+        spacy.load(_model)
+        return True
+    except: return False
