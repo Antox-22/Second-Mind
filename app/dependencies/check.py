@@ -4,7 +4,7 @@ from app.core.error import safe
 from importlib.metadata import distribution, PackageNotFoundError
 from app.core.i18n import i18n
 from packaging.version import Version
-from app.config import VERSION
+from app.config.config import VERSION_APP
 import spacy, requests
 
 def get_dependencies()  -> list[str]:
@@ -55,6 +55,7 @@ def check_spacy_model() -> bool:
         return True
     except: return False
 
+# TODO: DEBUG - FIX PRODUCTION
 @safe()
 def check_update(**_) -> tuple[bool, str]:
     url = f"https://api.github.com/repos/Antox-22/Second-Mind/contents/app/debug/__version__.json?ref=main"
@@ -68,4 +69,4 @@ def check_update(**_) -> tuple[bool, str]:
 
     remote_version = Version(r.json()["version"])
 
-    return (VERSION < remote_version, str(remote_version))
+    return (VERSION_APP < remote_version, str(remote_version))

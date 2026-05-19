@@ -1,18 +1,18 @@
-2026-05-20 00:50:54,961 [INFO] Settings loaded.
-2026-05-20 00:50:55,255 [DEBUG] Using WinForms / Chromium
-2026-05-20 00:50:56,002 [DEBUG] before_load event fired. injecting pywebview object
-2026-05-20 00:50:56,003 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
-2026-05-20 00:50:56,013 [DEBUG] _pywebviewready event fired
-2026-05-20 00:50:56,020 [DEBUG] loaded event fired
-2026-05-20 00:50:56,524 [DEBUG] PKG added spacy
-2026-05-20 00:50:56,524 [DEBUG] PKG added sentence-transformers
-2026-05-20 00:50:56,524 [DEBUG] PKG added scikit-learn
-2026-05-20 00:50:56,525 [DEBUG] PKG added networkx
-2026-05-20 00:50:56,525 [DEBUG] PKG added numpy
-2026-05-20 00:50:56,525 [DEBUG] PKG added pywebview
-2026-05-20 00:50:56,525 [DEBUG] PKG added fastapi
-2026-05-20 00:50:56,525 [DEBUG] PKG added uvicorn
-2026-05-20 00:50:56,525 [DEBUG] PKG added pydantic
-2026-05-20 00:50:56,750 [DEBUG] Starting new HTTPS connection (1): api.github.com:443
-2026-05-20 00:50:57,181 [DEBUG] https://api.github.com:443 "GET /repos/Antox-22/Second-Mind/contents/app/debug/__version__.json?ref=main HTTP/1.1" 200 26
-2026-05-20 01:06:19,310 [DEBUG] Closing window event.
+2026-05-20 01:08:44,379 [INFO] Settings loaded.
+2026-05-20 01:08:44,687 [DEBUG] Using WinForms / Chromium
+2026-05-20 01:08:45,358 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-20 01:08:45,359 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-20 01:08:45,379 [DEBUG] _pywebviewready event fired
+2026-05-20 01:08:45,386 [DEBUG] loaded event fired
+2026-05-20 01:08:45,889 [DEBUG] PKG added spacy
+2026-05-20 01:08:45,889 [DEBUG] PKG added sentence-transformers
+2026-05-20 01:08:45,889 [DEBUG] PKG added scikit-learn
+2026-05-20 01:08:45,889 [DEBUG] PKG added networkx
+2026-05-20 01:08:45,889 [DEBUG] PKG added numpy
+2026-05-20 01:08:45,889 [DEBUG] PKG added pywebview
+2026-05-20 01:08:45,889 [DEBUG] PKG added fastapi
+2026-05-20 01:08:45,889 [DEBUG] PKG added uvicorn
+2026-05-20 01:08:45,889 [DEBUG] PKG added pydantic
+2026-05-20 01:08:46,127 [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+2026-05-20 01:08:46,608 [DEBUG] https://api.github.com:443 "GET /repos/Antox-22/Second-Mind/contents/app/debug/__version__.json?ref=main HTTP/1.1" 200 26
+2026-05-20 01:10:55,034 [DEBUG] Closing window event.

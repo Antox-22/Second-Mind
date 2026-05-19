@@ -63,12 +63,11 @@ async function addLangSelect(lngs) {
     });
 }
 
-// TODO:
 function setCorrectVersion(versionName) {
     const box = document.getElementById('newVersionBox');
     const numberSpan = document.getElementById('newVersionNumber');
 
-    // numberSpan.textContent = versionName;
+    numberSpan.textContent = versionName;
 
     box.classList.remove('loading');
 }
@@ -154,9 +153,9 @@ async function loadStage() {
 
         OLDVERSION.textContent = STAGE[1];
         var result = await window.pywebview.api.check_update();
-        NEWVERSION.textContent = result[1];
+        setCorrectVersion(result[1]);
 
-        
+
     }
 }
 
