@@ -11,6 +11,8 @@ const ICON = document.querySelector(".icon")
 const HEADER = document.querySelector(".header")
 const VERSIONSECTION = document.querySelector(".version-section")
 const OLDVERSION = document.querySelector("#oldVersionNumber")
+const SPACYSPAN = document.querySelectorAll(".loader span")
+const SPACYSUBTITLE = document.querySelector("#span-subtitle")
 const MAXSTAGE = 4;
 var STAGE = 0;
 
@@ -86,6 +88,17 @@ async function checkPkgLog(pkg, state) {
     var input = document.querySelector(`#${pkg} input`)
     if (state === 1) input.checked = true;
 }
+
+function errorSpacy() {
+    SPACYSPAN.forEach(span => {
+        span.id = "error"
+    });
+
+    console.log(translation)
+    SPACYSUBTITLE.textContent = translation["error_spacy"] ?? "[error_spacy]";
+}
+
+errorSpacy()
 
 // Export to Python
 window.checkPkgLog = checkPkgLog

@@ -16,6 +16,7 @@
         "oldVersion": "VERSIONE ATTUALE",
         "newVersion": "NUOVA VERSIONE",
         "spacy_title": "Installazione del pacchetto spacy",
-        "install_spacy": "Sto installando il modello"
+        "install_spacy": "Sto installando il modello",
+        "error_spacy": "Errore durante l'installazione del modello"
     }
 }
