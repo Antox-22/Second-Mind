@@ -1,0 +1,207 @@
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+section {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50em;
+  gap: 3.25rem;
+  position: absolute;
+  z-index: 100;
+  align-items: center;
+  padding: 5em 0;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section ._card {
+  position: relative;
+  z-index: 555;
+  max-width: 38rem;
+  min-height: 20rem;
+  width: 90%;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+  box-shadow: 0.063em 0.75em 1.563em rgb(0 0 0 / 78%);
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 33.75rem) {
+  section ._card {
+    min-height: 15rem;
+  }
+}
+
+section .card-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.8em 0.8em 0em 1.5em;
+}
+
+section .card-header .close {
+  color: #d9d9d9;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+section .card-body {
+  width: 100%;
+  padding: 0.7em 2em 0.5em 2em;
+  text-align: left;
+}
+
+@media screen and (min-width: 33.75rem) {
+  section .card-body {
+    display: flex;
+    text-align: unset;
+  }
+}
+
+section .card-body ._icon {
+  width: 3rem;
+}
+
+@media screen and (min-width: 33.75rem) {
+  section .card-body ._icon {
+    width: 4rem;
+  }
+  section .card-body > div {
+    margin-left: 2em;
+  }
+}
+
+section .card-body h3 {
+  text-align: left;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 0.035em;
+  margin-top: 0.625em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+
+  lang {
+    color: #fff;
+  }
+}
+
+section .card-body p {
+  text-align: left;
+  color: #cccccc;
+  font-size: 1rem;
+  letter-spacing: 0.031rem;
+}
+
+section ._card ._progress {
+  width: 100%;
+  margin-top: 0.938rem;
+}
+
+@media screen and (min-width: 33.75rem) {
+  section ._card ._progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+section ._card ._progress > div {
+  width: 100%;
+}
+
+section ._card ._progress .progress-bar {
+  position: relative;
+  width: 100%;
+  background: #363636;
+  height: 0.35rem;
+  display: block;
+  border-radius: 3.125rem;
+}
+
+section ._card ._progress .progress-bar:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  display: block;
+  border-radius: 3.125rem;
+}
+
+section ._card ._progress span:first-of-type {
+  color: #cccccc;
+  text-align: right;
+  font-weight: 600;
+  width: 100%;
+  display: block;
+  margin-bottom: 0.313rem;
+  font-size: 0.9rem;
+}
+
+section ._card .btn-first,
+section ._card .btn-second {
+  background: #222127;
+  color: #fff;
+  border-radius: 0.25em;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 33.75rem) {
+  section ._card .btn-first,
+  section ._card .btn-second {
+    padding: 0.625rem 2.2rem;
+  }
+}
+
+section ._card .btn-second {
+  margin-left: 2em;
+}
+
+section .red {
+  background: radial-gradient(ellipse at right top, #a63d2a82 0%, #151419 47%, #151419 100%);
+  opacity: 0.95;
+  transition: opacity 0.25s ease-in;
+}
+
+section .red:hover {
+  opacity: 1;
+}
+
+section .red ._icon {
+  color: #fe6c9b;
+}
+
+section .red .card-body {
+  align-items: flex-end;
+}
+
+section .red:before {
+  background: linear-gradient(45deg, #232228, #232228, #232228, #232228, #a63d2a) border-box;
+}
+
+section .red .btn-first {
+  margin-left: 0;
+}
+
+section .red .btn-first:hover {
+  background: #ff6d57;
+  color: #111;
+}

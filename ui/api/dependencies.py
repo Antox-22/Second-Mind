@@ -74,6 +74,9 @@ class Api:
     def check_update(self):
         return check_update()
 
+    def close(self):
+        window.destroy()
+
     def save_config(self, name, age, lang):
         self.config.user.name = name
         self.config.user.age = int(age)

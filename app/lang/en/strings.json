@@ -1,6 +1,7 @@
 {
     "dependencies": {
         "title": "Second Mind - Installation Manager",
-        "stage_log_3": "Check last update ..."
+        "stage_log_3": "Check last update ...",
+        "error_title": "We are so sorry!"
     }
 }

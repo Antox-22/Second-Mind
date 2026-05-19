@@ -5,15 +5,6 @@ import webview
 
 
 html = ROOT / "ui" / "dependencies" / "index.html"
-close_count = False
-
-def on_closing():
-    global close_count
-    # window.evaluate_js("window.onClose()")
-    if close_count: return True
-    log.debug("Closing window event.")
-    close_count = True
-    return False
 
 window = webview.create_window(
     title = "Second Mind - Package Manager",
@@ -23,10 +14,9 @@ window = webview.create_window(
     frameless=True,
     easy_drag=True,
     resizable=False,
-    url= "file://" + str(html)
+    url= "file://" + str(html),
+    confirm_close=True
 )
-
-window.events.closing += on_closing
 
 def start_ui():
     webview.start(

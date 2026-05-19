@@ -16,6 +16,9 @@ const NEWVERSION = document.querySelector("#newVersionNumber")
 const SPACYSPAN = document.querySelectorAll(".loader span")
 const SPACYSUBTITLE = document.querySelector("#span-subtitle")
 const SPACYMODEL = document.querySelector("#submodel")
+const ERRORTEXT = document.querySelector("#error_text")
+const ERRORSECTION = document.querySelector("#error")
+const CLOSEBUTTON = document.querySelector(".btn-first")
 const MAXSTAGE = 4;
 var STAGE = 0;
 
@@ -99,6 +102,11 @@ function errorSpacy() {
     SPACYSUBTITLE.textContent = translation["error_spacy"] ?? "[error_spacy]";
 }
 
+function showError(msg, data) {
+    ERRORSECTION.style.display = "flex";
+    ERRORTEXT.textContent = format(translation[msg] ?? `[${msg}]`, data);
+}
+
 // Export to Python
 window.checkPkgLog = checkPkgLog
 
@@ -172,8 +180,13 @@ SUBMITCONF.addEventListener("click", async () => {
     }
 })
 
+CLOSEBUTTON.addEventListener("click", () => {
+    window.pywebview.api.close()
+})
+
 // ! Start Eventi
 window.addEventListener("pywebviewready", async () => {
     await loadLanguage();
     loadStage();
+    showError()
 });
