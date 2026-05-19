@@ -3,10 +3,11 @@ from app.core.error import safe
 from typing import Optional
 from pydantic import BaseModel
 from app.core.log import log
+from packaging.version import Version
 import json
 
 
-VERSION_APP = " 0.1.5"
+VERSION_APP = Version("1.5.0")
 NAME_APP = "Second Mind"
 config = None
 
@@ -35,7 +36,7 @@ class Config:
         global config
         if was_error:
             self.config = _Config(
-                app=App(name=NAME_APP, version=VERSION_APP, language=None),
+                app=App(name=NAME_APP, version=str(VERSION_APP), language=None),
                 user=User(name=None, age=None)
             )
 

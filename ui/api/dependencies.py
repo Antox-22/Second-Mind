@@ -1,6 +1,6 @@
 from app.config.config import get_config, VERSION_APP
 from app.core.i18n import i18n
-from app.dependencies.check import check_dependencies, check_spacy_model
+from app.dependencies.check import check_dependencies, check_spacy_model, check_update
 from app.dependencies.install import install_packages, install_spacy_model
 from enum import Enum
 from webview import Window
@@ -45,7 +45,7 @@ class Api:
             else:
                 if (check_spacy_model()):
                     window.resize(450, 200)
-                    return (Stage.CHECK_UPDATE.value, VERSION_APP)
+                    return (Stage.CHECK_UPDATE.value, str(VERSION_APP))
                 window.resize(800, 600)
                 return (Stage.SPACY.value, self.i18n.lang_setting.get("spacy-model"))
 
@@ -70,6 +70,9 @@ class Api:
 
     def install_spacy_model(self):
         return install_spacy_model(self.i18n.lang_setting.get("spacy-model"), window)
+
+    def check_update(self):
+        return check_update()
 
     def save_config(self, name, age, lang):
         self.config.user.name = name

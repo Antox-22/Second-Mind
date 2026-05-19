@@ -12,6 +12,7 @@ const ICON = document.querySelector(".icon")
 const HEADER = document.querySelector(".header")
 const VERSIONSECTION = document.querySelector(".version-section")
 const OLDVERSION = document.querySelector("#oldVersionNumber")
+const NEWVERSION = document.querySelector("#newVersionNumber")
 const SPACYSPAN = document.querySelectorAll(".loader span")
 const SPACYSUBTITLE = document.querySelector("#span-subtitle")
 const SPACYMODEL = document.querySelector("#submodel")
@@ -152,6 +153,10 @@ async function loadStage() {
         SPACYCARD.style.display = "none";
 
         OLDVERSION.textContent = STAGE[1];
+        var result = await window.pywebview.api.check_update();
+        NEWVERSION.textContent = result[1];
+
+        
     }
 }
 
