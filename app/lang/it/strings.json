@@ -14,6 +14,8 @@
         "name": "Nome", "age": "Età", "language": "Lingua",
         "submit": "Invia",
         "oldVersion": "VERSIONE ATTUALE",
-        "newVersion": "NUOVA VERSIONE"
+        "newVersion": "NUOVA VERSIONE",
+        "spacy_title": "Installazione del pacchetto spacy",
+        "install_spacy": "Sto installando il modello"
     }
 }
