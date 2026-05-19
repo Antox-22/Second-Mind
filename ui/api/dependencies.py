@@ -43,7 +43,9 @@ class Api:
                 window.resize(800, 600)
                 return (Stage.DEPENDENCIES.value, self._missing_pack[1])
             else:
-                if (check_spacy_model()): return (Stage.CHECK_UPDATE.value, VERSION_APP)
+                if (check_spacy_model()): 
+                    window.resize(500, 300)
+                    return (Stage.CHECK_UPDATE.value, VERSION_APP)
                 window.resize(800, 600)
                 return (Stage.SPACY.value, self.i18n.lang_setting.get("spacy-model"))
 
@@ -67,7 +69,7 @@ class Api:
         return install_packages(check_dependencies()[1], window)
 
     def install_spacy_model(self):
-        return install_spacy_model(self.i18n.lang_setting.get("spacy-model"))
+        return install_spacy_model(self.i18n.lang_setting.get("spacy-model"), window)
 
     def save_config(self, name, age, lang):
         self.config.user.name = name

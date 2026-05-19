@@ -299,10 +299,6 @@ input[type="checkbox"]:checked + lang {
 
 /* ? ------------ SPACY MODEL ------------ */
 
-#spacy {
-    display: flex;
-}
-
 #spacy .subtitle {
     position: relative;
     display: flex;

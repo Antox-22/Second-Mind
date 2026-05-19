@@ -5,6 +5,7 @@ const PROGRESSLOG = document.querySelector(".footer .log lang");
 const PKGSECTION = document.querySelector(".section")
 const PKGCARD = document.querySelector(".section #pkg")
 const CONFCARD = document.querySelector(".section #conf")
+const SPACYCARD = document.querySelector(".section #spacy")
 const LANGSELECT = document.querySelector("#language")
 const SUBMITCONF = document.querySelector("#submit")
 const ICON = document.querySelector(".icon")
@@ -13,6 +14,7 @@ const VERSIONSECTION = document.querySelector(".version-section")
 const OLDVERSION = document.querySelector("#oldVersionNumber")
 const SPACYSPAN = document.querySelectorAll(".loader span")
 const SPACYSUBTITLE = document.querySelector("#span-subtitle")
+const SPACYMODEL = document.querySelector("#submodel")
 const MAXSTAGE = 4;
 var STAGE = 0;
 
@@ -94,11 +96,8 @@ function errorSpacy() {
         span.id = "error"
     });
 
-    console.log(translation)
     SPACYSUBTITLE.textContent = translation["error_spacy"] ?? "[error_spacy]";
 }
-
-errorSpacy()
 
 // Export to Python
 window.checkPkgLog = checkPkgLog
@@ -110,6 +109,7 @@ async function loadStage() {
 
     if (STAGE[0] === 0 || STAGE[0] === 2) {
         PKGCARD.style.display = "flex";
+        SPACYCARD.style.display = "none";
         VERSIONSECTION.style.display = "none";
         CONFCARD.style.display = "none";
         HEADER.style.display = "flex";
@@ -121,6 +121,7 @@ async function loadStage() {
     if (STAGE[0] === 1) {
         PKGCARD.style.display = "none";
         VERSIONSECTION.style.display = "none";
+        SPACYCARD.style.display = "none";
         CONFCARD.style.display = "flex";
         HEADER.style.display = "flex";
 
@@ -135,9 +136,12 @@ async function loadStage() {
         PKGCARD.style.display = "none";
         CONFCARD.style.display = "none";
         VERSIONSECTION.style.display = "none";
+        SPACYCARD.style.display = "flex";
         HEADER.style.display = "flex";
 
         await reloadLanguage();
+        SPACYMODEL.textContent = STAGE[1];
+        await window.pywebview.api.install_spacy_model();
     }
 
     if (STAGE[0] === 4) {
@@ -145,6 +149,7 @@ async function loadStage() {
         PKGCARD.style.display = "none";
         CONFCARD.style.display = "none";
         HEADER.style.display = "none";
+        SPACYCARD.style.display = "none";
 
         OLDVERSION.textContent = STAGE[1];
     }

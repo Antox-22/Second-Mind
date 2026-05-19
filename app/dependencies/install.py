@@ -48,11 +48,11 @@ def install_packages(packages: list[str], window,  **_) -> None:
         window.evaluate_js("window.loadStage()")
 
 @safe()
-def install_spacy_model(model: str, was_error = False, **_) -> bool:
+def install_spacy_model(model: str, window, **_) -> bool:
     cmd = [
             sys.executable, "-m", "spacy", "download",
             model
-        ]
+    ]
 
     log.info("Installing model: %s", model)
     try:
@@ -62,7 +62,7 @@ def install_spacy_model(model: str, was_error = False, **_) -> bool:
         return False
 
     if check_spacy_model():
-        return True
+        window.evaluate_js("window.loadStage()")
 
     log.exception("Error checking model: %s", model)
     return False
