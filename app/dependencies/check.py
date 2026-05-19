@@ -1,10 +1,10 @@
+from app.config.config import VERSION_APP
 from app.core.log import log
 from app.core.path import *
 from app.core.error import safe
 from importlib.metadata import distribution, PackageNotFoundError
 from app.core.i18n import i18n
 from packaging.version import Version
-from app.config.config import VERSION_APP
 import spacy, requests
 
 def get_dependencies()  -> list[str]:
