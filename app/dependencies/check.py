@@ -1,8 +1,9 @@
 from app.core.log import log
 from app.core.path import *
+from app.core.error import safe
 from importlib.metadata import distribution, PackageNotFoundError
 from app.core.i18n import i18n
-import spacy
+import spacy, requests
 
 def get_dependencies()  -> list[str]:
     _dependencies = []
@@ -51,3 +52,16 @@ def check_spacy_model() -> bool:
         spacy.load(_model)
         return True
     except: return False
+
+@safe()
+def check_update(**_):
+    url = f"https://api.github.com/repos/Antox-22/Second-Mind/contents/version.json?ref=main"
+    headers = {
+        "Accept": "application/vnd.github.raw+json",
+        "User-Agent": "check-update/1.0",
+    }
+
+    r = requests.get(url, headers=headers, timeout=10)
+    r.raise_for_status()
+
+    remote_version = Version(r.json()["version"])

@@ -43,8 +43,8 @@ class Api:
                 window.resize(800, 600)
                 return (Stage.DEPENDENCIES.value, self._missing_pack[1])
             else:
-                if (check_spacy_model()): 
-                    window.resize(500, 300)
+                if (check_spacy_model()):
+                    window.resize(450, 200)
                     return (Stage.CHECK_UPDATE.value, VERSION_APP)
                 window.resize(800, 600)
                 return (Stage.SPACY.value, self.i18n.lang_setting.get("spacy-model"))

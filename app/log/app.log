@@ -1,28 +1,16 @@
-2026-05-20 00:02:12,455 [INFO] Settings loaded.
-2026-05-20 00:02:12,767 [DEBUG] Using WinForms / Chromium
-2026-05-20 00:02:13,424 [DEBUG] before_load event fired. injecting pywebview object
-2026-05-20 00:02:13,425 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
-2026-05-20 00:02:13,440 [DEBUG] _pywebviewready event fired
-2026-05-20 00:02:13,447 [DEBUG] loaded event fired
-2026-05-20 00:02:13,964 [DEBUG] PKG added spacy
-2026-05-20 00:02:13,964 [DEBUG] PKG added sentence-transformers
-2026-05-20 00:02:13,964 [DEBUG] PKG added scikit-learn
-2026-05-20 00:02:13,964 [DEBUG] PKG added networkx
-2026-05-20 00:02:13,964 [DEBUG] PKG added numpy
-2026-05-20 00:02:13,965 [DEBUG] PKG added pywebview
-2026-05-20 00:02:13,965 [DEBUG] PKG added fastapi
-2026-05-20 00:02:13,965 [DEBUG] PKG added uvicorn
-2026-05-20 00:02:13,965 [DEBUG] PKG added pydantic
-2026-05-20 00:02:13,991 [INFO] Installing model: it_core_news_sm
-2026-05-20 00:02:18,248 [ERROR] Error checking model: it_core_news_sm
-NoneType: None
-2026-05-20 00:02:18,750 [DEBUG] PKG added spacy
-2026-05-20 00:02:18,750 [DEBUG] PKG added sentence-transformers
-2026-05-20 00:02:18,750 [DEBUG] PKG added scikit-learn
-2026-05-20 00:02:18,750 [DEBUG] PKG added networkx
-2026-05-20 00:02:18,750 [DEBUG] PKG added numpy
-2026-05-20 00:02:18,750 [DEBUG] PKG added pywebview
-2026-05-20 00:02:18,751 [DEBUG] PKG added fastapi
-2026-05-20 00:02:18,751 [DEBUG] PKG added uvicorn
-2026-05-20 00:02:18,751 [DEBUG] PKG added pydantic
-2026-05-20 00:03:14,908 [DEBUG] Closing window event.
+2026-05-20 00:05:01,946 [INFO] Settings loaded.
+2026-05-20 00:05:02,261 [DEBUG] Using WinForms / Chromium
+2026-05-20 00:05:02,963 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-20 00:05:02,964 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-20 00:05:02,976 [DEBUG] _pywebviewready event fired
+2026-05-20 00:05:02,984 [DEBUG] loaded event fired
+2026-05-20 00:05:03,486 [DEBUG] PKG added spacy
+2026-05-20 00:05:03,486 [DEBUG] PKG added sentence-transformers
+2026-05-20 00:05:03,486 [DEBUG] PKG added scikit-learn
+2026-05-20 00:05:03,486 [DEBUG] PKG added networkx
+2026-05-20 00:05:03,487 [DEBUG] PKG added numpy
+2026-05-20 00:05:03,487 [DEBUG] PKG added pywebview
+2026-05-20 00:05:03,487 [DEBUG] PKG added fastapi
+2026-05-20 00:05:03,487 [DEBUG] PKG added uvicorn
+2026-05-20 00:05:03,487 [DEBUG] PKG added pydantic
+2026-05-20 00:05:24,284 [DEBUG] Closing window event.

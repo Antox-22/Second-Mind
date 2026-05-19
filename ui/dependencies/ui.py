@@ -18,8 +18,8 @@ def on_closing():
 window = webview.create_window(
     title = "Second Mind - Package Manager",
     js_api=Api(),
-    width=500,
-    height=300,
+    width=450,
+    height=200,
     frameless=True,
     easy_drag=True,
     resizable=False,
