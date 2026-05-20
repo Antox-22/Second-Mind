@@ -1,11 +1,11 @@
 {
   "app": {
     "name": "Second Mind",
-    "version": " 0.1.5",
-    "language": "it"
+    "version": "1.5.0",
+    "language": null
   },
   "user": {
-    "name": "Paolo",
-    "age": 19
+    "name": null,
+    "age": null
   }
 }

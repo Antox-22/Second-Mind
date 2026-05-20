@@ -19,6 +19,7 @@
         "install_spacy": "Sto installando il modello",
         "error_spacy": "Errore durante l'installazione del modello",
         "error_log_spacy": "Errore durrante l'installazione del modello. Provate con l'installazione manuale '{cmd}' e riavviare la configurazioen.",
-        "error_title": "Ci dispiace tanto!"
+        "error_title": "Ci dispiace tanto!",
+        "unexpected_error": "{error}"
     }
 }

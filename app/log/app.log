@@ -1,18 +1,42 @@
-2026-05-20 01:35:53,627 [INFO] Settings loaded.
-2026-05-20 01:35:53,920 [DEBUG] Using WinForms / Chromium
-2026-05-20 01:35:54,590 [DEBUG] before_load event fired. injecting pywebview object
-2026-05-20 01:35:54,591 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
-2026-05-20 01:35:54,602 [DEBUG] _pywebviewready event fired
-2026-05-20 01:35:54,609 [DEBUG] loaded event fired
-2026-05-20 01:35:55,114 [DEBUG] PKG added spacy
-2026-05-20 01:35:55,115 [DEBUG] PKG added sentence-transformers
-2026-05-20 01:35:55,115 [DEBUG] PKG added scikit-learn
-2026-05-20 01:35:55,115 [DEBUG] PKG added networkx
-2026-05-20 01:35:55,115 [DEBUG] PKG added numpy
-2026-05-20 01:35:55,115 [DEBUG] PKG added pywebview
-2026-05-20 01:35:55,115 [DEBUG] PKG added fastapi
-2026-05-20 01:35:55,115 [DEBUG] PKG added uvicorn
-2026-05-20 01:35:55,115 [DEBUG] PKG added pydantic
-2026-05-20 01:35:55,339 [DEBUG] Starting new HTTPS connection (1): api.github.com:443
-2026-05-20 01:35:55,760 [DEBUG] https://api.github.com:443 "GET /repos/Antox-22/Second-Mind/contents/app/debug/__version__.json?ref=main HTTP/1.1" 200 26
-2026-05-20 01:36:05,634 [DEBUG] Closing window event.
+2026-05-20 02:04:13,621 [INFO] Settings loaded.
+2026-05-20 02:04:13,912 [DEBUG] Using WinForms / Chromium
+2026-05-20 02:04:14,600 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-20 02:04:14,601 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-20 02:04:14,616 [DEBUG] _pywebviewready event fired
+2026-05-20 02:04:14,625 [DEBUG] loaded event fired
+2026-05-20 02:04:15,133 [DEBUG] PKG added spacy
+2026-05-20 02:04:15,133 [DEBUG] PKG added sentence-transformers
+2026-05-20 02:04:15,133 [DEBUG] PKG added scikit-learn
+2026-05-20 02:04:15,133 [DEBUG] PKG added networkx
+2026-05-20 02:04:15,133 [DEBUG] PKG added numpy
+2026-05-20 02:04:15,133 [DEBUG] PKG added pywebview
+2026-05-20 02:04:15,133 [DEBUG] PKG added fastapi
+2026-05-20 02:04:15,133 [DEBUG] PKG added uvicorn
+2026-05-20 02:04:15,133 [DEBUG] PKG added pydantic
+2026-05-20 02:04:15,135 [WARNING] Missing *networkx* package
+2026-05-20 02:04:15,136 [WARNING] Missing *fastapi* package
+2026-05-20 02:04:15,136 [WARNING] Missing *uvicorn* package
+2026-05-20 02:04:15,144 [DEBUG] PKG added spacy
+2026-05-20 02:04:15,145 [DEBUG] PKG added sentence-transformers
+2026-05-20 02:04:15,145 [DEBUG] PKG added scikit-learn
+2026-05-20 02:04:15,145 [DEBUG] PKG added networkx
+2026-05-20 02:04:15,145 [DEBUG] PKG added numpy
+2026-05-20 02:04:15,145 [DEBUG] PKG added pywebview
+2026-05-20 02:04:15,145 [DEBUG] PKG added fastapi
+2026-05-20 02:04:15,145 [DEBUG] PKG added uvicorn
+2026-05-20 02:04:15,145 [DEBUG] PKG added pydantic
+2026-05-20 02:04:15,147 [WARNING] Missing *networkx* package
+2026-05-20 02:04:15,148 [WARNING] Missing *fastapi* package
+2026-05-20 02:04:15,148 [WARNING] Missing *uvicorn* package
+2026-05-20 02:04:15,157 [INFO] Installing packages: ['networkx', 'fastapi', 'uvicorn']
+2026-05-20 02:04:20,191 [INFO] Installing packages: ['networkx', 'fastapi', 'uvicorn']
+2026-05-20 02:04:21,790 [INFO] Installing packages: ['networkx', 'fastapi', 'uvicorn']
+2026-05-20 02:04:23,700 [DEBUG] PKG added spacy
+2026-05-20 02:04:23,701 [DEBUG] PKG added sentence-transformers
+2026-05-20 02:04:23,701 [DEBUG] PKG added scikit-learn
+2026-05-20 02:04:23,701 [DEBUG] PKG added networkx
+2026-05-20 02:04:23,701 [DEBUG] PKG added numpy
+2026-05-20 02:04:23,701 [DEBUG] PKG added pywebview
+2026-05-20 02:04:23,701 [DEBUG] PKG added fastapi
+2026-05-20 02:04:23,701 [DEBUG] PKG added uvicorn
+2026-05-20 02:04:23,701 [DEBUG] PKG added pydantic
