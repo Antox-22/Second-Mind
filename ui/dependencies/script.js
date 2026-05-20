@@ -22,6 +22,10 @@ const CLOSEBUTTON = document.querySelector(".btn-first")
 const MAXSTAGE = 4;
 var STAGE = 0;
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 // Add step progress bar
 function setStep(stage) {
     var percent = (stage / MAXSTAGE) * 100;
@@ -102,10 +106,22 @@ function errorSpacy() {
     SPACYSUBTITLE.textContent = translation["error_spacy"] ?? "[error_spacy]";
 }
 
-function showError(msg, data) {
+window.errorSpacy = errorSpacy
+
+async function showError(msg, data) {
+    if (STAGE[0] != 4) await sleep(2000);
+
+    PKGCARD.style.display = "none";
+    SPACYCARD.style.display = "none";
+    VERSIONSECTION.style.display = "none";
+    CONFCARD.style.display = "none";
+    HEADER.style.display = "flex";
+
     ERRORSECTION.style.display = "flex";
     ERRORTEXT.textContent = format(translation[msg] ?? `[${msg}]`, data);
 }
+
+window.showError = showError
 
 // Export to Python
 window.checkPkgLog = checkPkgLog
@@ -188,5 +204,4 @@ CLOSEBUTTON.addEventListener("click", () => {
 window.addEventListener("pywebviewready", async () => {
     await loadLanguage();
     loadStage();
-    showError()
 });

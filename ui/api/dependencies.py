@@ -1,4 +1,5 @@
 from app.config.config import get_config, VERSION_APP
+from app.core.error import set_window as set_window_config
 from app.core.i18n import i18n
 from app.dependencies.check import check_dependencies, check_spacy_model, check_update
 from app.dependencies.install import install_packages, install_spacy_model
@@ -19,6 +20,7 @@ class Stage(Enum):
 def set_window(_window):
     global window
     window = _window
+    set_window_config(window)
 
 class Api:
     def __init__(self):
@@ -75,6 +77,7 @@ class Api:
         return check_update()
 
     def close(self):
+        window.confirm_close = False
         window.destroy()
 
     def save_config(self, name, age, lang):

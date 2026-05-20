@@ -1,5 +1,5 @@
 from app.core.log import log
-from app.core.error import safe
+from app.core.error import safe, showError
 from app.dependencies.check import check_spacy_model
 from importlib.metadata import distribution, PackageNotFoundError
 import subprocess
@@ -46,6 +46,9 @@ def install_packages(packages: list[str], window,  **_) -> None:
 
     if not _missing:
         window.evaluate_js("window.loadStage()")
+        return
+
+    showError(window, "pkg_error");
 
 @safe()
 def install_spacy_model(model: str, window, **_) -> bool:
@@ -59,10 +62,15 @@ def install_spacy_model(model: str, window, **_) -> bool:
         subprocess.check_call(cmd)
     except:
         log.exception("Error installing model: %s", model)
+        window.evaluate_js("window.errorSpacy()")
+        showError(window, "error_log_spacy", {"cmd": f"python -m spacy download {model}"});
         return False
 
     if check_spacy_model():
         window.evaluate_js("window.loadStage()")
+        return True
 
     log.exception("Error checking model: %s", model)
+    window.evaluate_js("window.errorSpacy()")
+    showError(window, "error_log_spacy", {"cmd": f"python -m spacy download {model}"});
     return False

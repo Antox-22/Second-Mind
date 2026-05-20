@@ -10,6 +10,7 @@
         "pkg_log": "Installo {pkg} ...",
         "pkg_log_installed": "Installato {pkg} ...",
         "pkg_log_error": "Errore {pkg} ...",
+        "pkg_error": "Errore durante l'installazione dei pacchetti, provare ad installarmi manualmente.",
         "conf_title": "Completa la configurazione",
         "name": "Nome", "age": "Età", "language": "Lingua",
         "submit": "Invia",
@@ -18,8 +19,8 @@
         "spacy_title": "Installazione del pacchetto spacy",
         "install_spacy": "Sto installando il modello",
         "error_spacy": "Errore durante l'installazione del modello",
-        "error_log_spacy": "Errore durrante l'installazione del modello. Provate con l'installazione manuale '{cmd}' e riavviare la configurazioen.",
+        "error_log_spacy": "Errore durrante l'installazione del modello. Provate con l'installazione manuale '{cmd}' e riavviare la configurazione.",
         "error_title": "Ci dispiace tanto!",
-        "unexpected_error": "{error}"
+        "unexpected_error": "Hai incontrato un errore non gestito : {error}"
     }
 }

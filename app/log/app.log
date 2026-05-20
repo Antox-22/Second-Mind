@@ -1,42 +1,38 @@
-2026-05-20 02:04:13,621 [INFO] Settings loaded.
-2026-05-20 02:04:13,912 [DEBUG] Using WinForms / Chromium
-2026-05-20 02:04:14,600 [DEBUG] before_load event fired. injecting pywebview object
-2026-05-20 02:04:14,601 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
-2026-05-20 02:04:14,616 [DEBUG] _pywebviewready event fired
-2026-05-20 02:04:14,625 [DEBUG] loaded event fired
-2026-05-20 02:04:15,133 [DEBUG] PKG added spacy
-2026-05-20 02:04:15,133 [DEBUG] PKG added sentence-transformers
-2026-05-20 02:04:15,133 [DEBUG] PKG added scikit-learn
-2026-05-20 02:04:15,133 [DEBUG] PKG added networkx
-2026-05-20 02:04:15,133 [DEBUG] PKG added numpy
-2026-05-20 02:04:15,133 [DEBUG] PKG added pywebview
-2026-05-20 02:04:15,133 [DEBUG] PKG added fastapi
-2026-05-20 02:04:15,133 [DEBUG] PKG added uvicorn
-2026-05-20 02:04:15,133 [DEBUG] PKG added pydantic
-2026-05-20 02:04:15,135 [WARNING] Missing *networkx* package
-2026-05-20 02:04:15,136 [WARNING] Missing *fastapi* package
-2026-05-20 02:04:15,136 [WARNING] Missing *uvicorn* package
-2026-05-20 02:04:15,144 [DEBUG] PKG added spacy
-2026-05-20 02:04:15,145 [DEBUG] PKG added sentence-transformers
-2026-05-20 02:04:15,145 [DEBUG] PKG added scikit-learn
-2026-05-20 02:04:15,145 [DEBUG] PKG added networkx
-2026-05-20 02:04:15,145 [DEBUG] PKG added numpy
-2026-05-20 02:04:15,145 [DEBUG] PKG added pywebview
-2026-05-20 02:04:15,145 [DEBUG] PKG added fastapi
-2026-05-20 02:04:15,145 [DEBUG] PKG added uvicorn
-2026-05-20 02:04:15,145 [DEBUG] PKG added pydantic
-2026-05-20 02:04:15,147 [WARNING] Missing *networkx* package
-2026-05-20 02:04:15,148 [WARNING] Missing *fastapi* package
-2026-05-20 02:04:15,148 [WARNING] Missing *uvicorn* package
-2026-05-20 02:04:15,157 [INFO] Installing packages: ['networkx', 'fastapi', 'uvicorn']
-2026-05-20 02:04:20,191 [INFO] Installing packages: ['networkx', 'fastapi', 'uvicorn']
-2026-05-20 02:04:21,790 [INFO] Installing packages: ['networkx', 'fastapi', 'uvicorn']
-2026-05-20 02:04:23,700 [DEBUG] PKG added spacy
-2026-05-20 02:04:23,701 [DEBUG] PKG added sentence-transformers
-2026-05-20 02:04:23,701 [DEBUG] PKG added scikit-learn
-2026-05-20 02:04:23,701 [DEBUG] PKG added networkx
-2026-05-20 02:04:23,701 [DEBUG] PKG added numpy
-2026-05-20 02:04:23,701 [DEBUG] PKG added pywebview
-2026-05-20 02:04:23,701 [DEBUG] PKG added fastapi
-2026-05-20 02:04:23,701 [DEBUG] PKG added uvicorn
-2026-05-20 02:04:23,701 [DEBUG] PKG added pydantic
+2026-05-20 02:46:27,140 [ERROR] Errore in _load ReTry
+Traceback (most recent call last):
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\core\error.py", line 16, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\Documents\GitHub\Second-Mind\app\config\config.py", line 49, in _load
+    with open(ROOT / "app" / "config" / "settings.json", "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Utente\\Documents\\GitHub\\Second-Mind\\app\\config\\settings.json'
+2026-05-20 02:46:27,142 [INFO] Create settings file
+2026-05-20 02:46:27,142 [INFO] Settings loaded.
+2026-05-20 02:46:27,450 [DEBUG] Using WinForms / Chromium
+2026-05-20 02:46:28,087 [DEBUG] before_load event fired. injecting pywebview object
+2026-05-20 02:46:28,088 [DEBUG] Loading JS files from C:\Users\Utente\Documents\GitHub\Second-Mind\.env\Lib\site-packages\webview\js
+2026-05-20 02:46:28,104 [DEBUG] _pywebviewready event fired
+2026-05-20 02:46:28,112 [DEBUG] loaded event fired
+2026-05-20 02:46:28,619 [DEBUG] PKG added spacy
+2026-05-20 02:46:28,619 [DEBUG] PKG added sentence-transformers
+2026-05-20 02:46:28,619 [DEBUG] PKG added scikit-learn
+2026-05-20 02:46:28,619 [DEBUG] PKG added networkx
+2026-05-20 02:46:28,619 [DEBUG] PKG added numpy
+2026-05-20 02:46:28,619 [DEBUG] PKG added pywebview
+2026-05-20 02:46:28,619 [DEBUG] PKG added fastapi
+2026-05-20 02:46:28,619 [DEBUG] PKG added uvicorn
+2026-05-20 02:46:28,619 [DEBUG] PKG added pydantic
+2026-05-20 02:46:34,450 [DEBUG] Settings saved.
+2026-05-20 02:46:34,451 [INFO] Settings loaded.
+2026-05-20 02:46:34,955 [DEBUG] PKG added spacy
+2026-05-20 02:46:34,955 [DEBUG] PKG added sentence-transformers
+2026-05-20 02:46:34,955 [DEBUG] PKG added scikit-learn
+2026-05-20 02:46:34,955 [DEBUG] PKG added networkx
+2026-05-20 02:46:34,955 [DEBUG] PKG added numpy
+2026-05-20 02:46:34,955 [DEBUG] PKG added pywebview
+2026-05-20 02:46:34,955 [DEBUG] PKG added fastapi
+2026-05-20 02:46:34,955 [DEBUG] PKG added uvicorn
+2026-05-20 02:46:34,955 [DEBUG] PKG added pydantic
+2026-05-20 02:46:35,158 [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+2026-05-20 02:46:35,455 [DEBUG] https://api.github.com:443 "GET /repos/Antox-22/Second-Mind/contents/app/debug/__version__.json?ref=main HTTP/1.1" 200 26
