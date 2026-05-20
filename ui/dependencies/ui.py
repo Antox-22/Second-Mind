@@ -5,10 +5,10 @@ import webview
 
 
 html = ROOT / "ui" / "dependencies" / "index.html"
-
+api = Api()
 window = webview.create_window(
     title = "Second Mind - Package Manager",
-    js_api=Api(),
+    js_api=api,
     width=450,
     height=200,
     frameless=True,
@@ -28,3 +28,4 @@ def start_ui():
 
 if __name__ == "__main__":
     start_ui()
+    print(api.return_state)
