@@ -26,6 +26,5 @@ def start_ui():
         debug=True
     )
 
-if __name__ == "__main__":
-    start_ui()
-    print(api.return_state)
+
+    return api.return_state
