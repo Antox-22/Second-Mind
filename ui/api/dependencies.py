@@ -27,6 +27,7 @@ class Api:
         self._config = get_config()
         self.config = self._config.config
         self.i18n = i18n()
+        self.return_state = 0;
 
     def get_stage(self):
         """
@@ -79,6 +80,14 @@ class Api:
     def close(self):
         window.confirm_close = False
         window.destroy()
+
+    def set_return_state(self, _state):
+        """
+        0: Run App
+        1: Update
+        -1: Error
+        """
+        self.return_state = _state
 
     def save_config(self, name, age, lang):
         self.config.user.name = name

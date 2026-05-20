@@ -119,6 +119,8 @@ async function showError(msg, data) {
 
     ERRORSECTION.style.display = "flex";
     ERRORTEXT.textContent = format(translation[msg] ?? `[${msg}]`, data);
+
+    await window.pywebview.api.set_return_state(-1);
 }
 
 window.showError = showError
@@ -179,6 +181,10 @@ async function loadStage() {
         var result = await window.pywebview.api.check_update();
         setCorrectVersion(result[1]);
 
+        if (!result[0]) await window.pywebview.api.set_return_state(0);
+        else await window.pywebview.api.set_return_state(1);
+        await sleep(3000);
+        await window.pywebview.api.close();
 
     }
 }
