@@ -2,7 +2,7 @@ from app.utils.path import ROOT
 import logging as log
 from pathlib import Path
 
-log_dir = ROOT / "app" / "log"
+log_dir = ROOT / "data" / "log"
 log_dir.mkdir(parents=True, exist_ok=True)
 
 logger = log.getLogger()

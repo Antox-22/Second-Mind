@@ -4,6 +4,7 @@ from app.utils.shared.error import safe
 import json, os
 
 DEFAULT_LANGUAGE = "it"
+LANG_ROOT = ROOT / "data" / "lang"
 
 class i18n:
     def __init__(self):
@@ -17,12 +18,12 @@ class i18n:
     @safe()
     def _load(self, **_):
         self.lang = self.config.app.language if self.config.app.language else DEFAULT_LANGUAGE
-        path = ROOT / "app" / "lang" / self.lang / "strings.json"
+        path = LANG_ROOT / self.lang / "strings.json"
 
         with open(path, "r", encoding="utf-8") as f:
             self.translations = json.load(f)
 
-        path = ROOT / "app" / "lang" / self.lang / "config.json"
+        path = LANG_ROOT / self.lang / "config.json"
         with open(path, "r", encoding="utf-8") as f:
             self.lang_setting = json.load(f)
 
@@ -40,7 +41,7 @@ class i18n:
 
     @safe()
     def get_languages(self, **_):
-        _list = [ROOT / "app" / "lang" / f for f in os.listdir(ROOT / "app" / "lang") if os.path.isdir(ROOT / "app" / "lang" / f)]
+        _list = [LANG_ROOT / f for f in os.listdir(LANG_ROOT) if os.path.isdir(LANG_ROOT / f)]
         _lngs = []
 
         for p in _list:
