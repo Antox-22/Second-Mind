@@ -1,4 +1,4 @@
-from app.core.path import ROOT
+from app.utils.path import ROOT
 import logging as log
 from pathlib import Path
 

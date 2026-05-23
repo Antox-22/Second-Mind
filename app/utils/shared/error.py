@@ -1,4 +1,4 @@
-from app.core.log import log
+from app.utils.log import log
 import functools, json
 
 window = None

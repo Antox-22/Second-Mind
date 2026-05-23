@@ -1,4 +1,4 @@
-import { format, loadLanguage, reloadLanguage, translation } from "../core/lang.js";
+import { format, loadLanguage, reloadLanguage, translation } from "../modules/lang.js";
 
 const PROGRESS = document.querySelector(".progress");
 const PROGRESSLOG = document.querySelector(".footer .log lang");
