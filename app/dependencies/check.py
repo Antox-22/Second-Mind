@@ -5,6 +5,18 @@ from app.core.error import safe
 from importlib.metadata import distribution, PackageNotFoundError
 from app.core.i18n import i18n
 from packaging.version import Version
+
+
+
+import socket
+
+def block_network(*args, **kwargs):
+    raise OSError("Network call blocked (Simulated Offline Mode)")
+
+# Sovrascrive il metodo di connessione standard di Python
+socket.socket.connect = block_network
+
+
 import spacy, requests
 
 def get_dependencies()  -> list[str]:
@@ -56,7 +68,7 @@ def check_spacy_model() -> bool:
     except: return False
 
 # TODO: DEBUG - FIX PRODUCTION
-@safe()
+@safe(exception_data={requests.exceptions.ConnectionError: "internet_error"})
 def check_update(**_) -> tuple[bool, str]:
     url = f"https://api.github.com/repos/Antox-22/Second-Mind/contents/app/debug/__version__.json?ref=main"
     headers = {
