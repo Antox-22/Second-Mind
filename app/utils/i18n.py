@@ -1,6 +1,6 @@
 from app.config.config import get_config
 from app.utils.path import ROOT
-from app.utils.shared.error import safe
+from app.utils.error import safe
 import json, os
 
 DEFAULT_LANGUAGE = "it"

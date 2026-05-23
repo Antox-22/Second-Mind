@@ -1,5 +1,5 @@
 from app.utils.path import ROOT
-from app.utils.shared.error import safe
+from app.utils.error import safe
 from typing import Optional
 from pydantic import BaseModel
 from app.utils.log import log

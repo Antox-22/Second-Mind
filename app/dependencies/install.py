@@ -1,5 +1,5 @@
 from app.utils.log import log
-from app.utils.shared.error import safe, showError
+from app.utils.error import safe, showError
 from app.dependencies.check import check_spacy_model
 from importlib.metadata import distribution, PackageNotFoundError
 import subprocess

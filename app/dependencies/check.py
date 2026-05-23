@@ -1,9 +1,9 @@
 from app.config.config import VERSION_APP
 from app.utils.log import log
 from app.utils.path import *
-from app.utils.shared.error import safe
+from app.utils.error import safe
 from importlib.metadata import distribution, PackageNotFoundError
-from app.utils.shared.i18n import i18n
+from app.utils.i18n import i18n
 from packaging.version import Version
 
 
