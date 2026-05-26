@@ -10,6 +10,7 @@ _id_chunk_counter = count(1)
 class Chunk:
     note_id: int
     text: str
+    sentences: list[str]
     id: int = field(default_factory=lambda: next(_id_chunk_counter))
     embedding: Optional[List[float]] = None
     emotion: Optional[str] = None

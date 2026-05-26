@@ -1,22 +1,8 @@
-from app.utils.i18n import i18n
-from app.utils.error import showError, window
-from app.config.config import get_config
-from sentence_transformers import SentenceTransformer
+from app.core.load_model import nlp, embedding_model as model
+from app.core.models import Chunk
 import numpy as np
 import spacy
 
-config = get_config()
-
-try:
-    _spacy_model = i18n().lang_setting.get("spacy-model")
-    nlp = spacy.load(_spacy_model)
-except:
-    showError(window, "error_spacy") #TODO: ERROR LANG
-
-try:
-    model = SentenceTransformer(config.config.embedding_model)
-except:
-    showError(window, "error_embedding") #TODO: ERROR LANG
 
 def split_sentences(text: str) -> list[str]:
     doc = nlp(text)
@@ -32,9 +18,10 @@ def calculate_cosine_similarity(vec1: list[float], vec2: list[float]) -> float:
 def semantic_chunking_batch(
     sentences: list[str],
     get_embeddings_batch_func,
-    threshold: float = 0.35,
+    note_id: int,
+    threshold: float = 0.65,
     max_chars: int = 1000
-) -> list[str]:
+) -> list[Chunk]:
 
     if not sentences:
         return []
@@ -56,7 +43,14 @@ def semantic_chunking_batch(
         sim = calculate_cosine_similarity(chunk_centroid, sentence_emb)
 
         if (sim < threshold and len(sentence) >= 30) or (current_length + len(sentence) > max_chars):
-            chunks.append(" ".join(current_chunk).strip())
+            chunks.append(
+                Chunk(
+                    text=" ".join(current_chunk).strip(),
+                    sentences=current_chunk,
+                    note_id=note_id,
+                    embedding=batch_embedder([" ".join(current_chunk).strip(),])[0]
+                )
+            )
             current_chunk = [sentence]
             current_chunk_embeddings = [sentence_emb]
             current_length = len(sentence)
@@ -66,7 +60,14 @@ def semantic_chunking_batch(
             current_length += len(sentence)
 
     if current_chunk:
-        chunks.append(" ".join(current_chunk).strip())
+        chunks.append(
+            Chunk(
+                text=" ".join(current_chunk).strip(),
+                sentences=current_chunk,
+                note_id=note_id,
+                embedding=batch_embedder([" ".join(current_chunk).strip(),])[0]
+            )
+        )
 
     return chunks
 
