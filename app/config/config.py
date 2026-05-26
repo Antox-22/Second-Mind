@@ -23,6 +23,7 @@ class User(BaseModel):
 class _Config(BaseModel):
     app: App
     user: User
+    embedding_model: str
 
 class Config:
     def __init__(self):

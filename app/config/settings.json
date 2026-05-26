@@ -7,5 +7,6 @@
   "user": {
     "name": "Paolo",
     "age": 19
-  }
+  },
+  "embedding_model": "all-MiniLM-L6-v2"
 }
