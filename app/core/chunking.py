@@ -19,7 +19,7 @@ def semantic_chunking_batch(
     sentences: list[str],
     get_embeddings_batch_func,
     note_id: int,
-    threshold: float = 0.65,
+    threshold: float = 0.50,
     max_chars: int = 1000
 ) -> list[Chunk]:
 
