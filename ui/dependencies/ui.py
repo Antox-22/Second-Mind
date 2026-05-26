@@ -1,5 +1,5 @@
-from app.core.path import ROOT
-from app.core.log import log
+from app.utils.path import ROOT
+from app.utils.log import log
 from ui.api.dependencies import Api, set_window
 import webview
 

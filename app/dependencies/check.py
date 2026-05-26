@@ -5,18 +5,6 @@ from app.utils.error import safe
 from importlib.metadata import distribution, PackageNotFoundError
 from app.utils.i18n import i18n
 from packaging.version import Version
-
-
-
-import socket
-
-def block_network(*args, **kwargs):
-    raise OSError("Network call blocked (Simulated Offline Mode)")
-
-# Sovrascrive il metodo di connessione standard di Python
-socket.socket.connect = block_network
-
-
 import spacy, requests
 
 def get_dependencies()  -> list[str]:
