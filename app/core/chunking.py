@@ -1,6 +1,6 @@
 from app.core.load_model import nlp, embedding_model as model
 from app.core.models import Chunk
-from sklearn.metrics.pairwise import cosine_similarity
+from app.core.emotion import get_emotion
 import numpy as np
 
 

@@ -2,7 +2,8 @@ from app.utils.i18n import i18n
 from app.utils.error import showError, window
 from app.config.config import get_config
 from sentence_transformers import SentenceTransformer
-from transformers import pipeline
+from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
+from transformers import CamembertTokenizerFast
 import spacy
 
 config = get_config()
@@ -20,6 +21,9 @@ except:
     showError(window, "error_embedding") #TODO: ERROR LANG
 
 try:
-    emotion_model = pipeline("text-classification", model=i18n.lang_setting.get("emotion_model"))
+    model_name = i18n.lang_setting.get("emotion_model")
+    _tokenizer = CamembertTokenizerFast.from_pretrained(model_name)
+    _model = AutoModelForSequenceClassification.from_pretrained(model_name)
+    emotion_model = pipeline("text-classification", model=_model, tokenizer=_tokenizer)
 except:
     showError(window, "error_emotion") #TODO: ERROR LANG
