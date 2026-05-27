@@ -1,5 +1,6 @@
 {
     "spacy-model": "it_core_news_sm",
+    "emotion_model": "MilaNLProc/feel-it-italian-emotion",
     "name": "Italiano",
     "prefix": "it"
 }

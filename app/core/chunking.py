@@ -1,7 +1,7 @@
 from app.core.load_model import nlp, embedding_model as model
 from app.core.models import Chunk
+from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
-import spacy
 
 
 def split_sentences(text: str) -> list[str]:
