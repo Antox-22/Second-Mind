@@ -20,6 +20,7 @@ class Chunk:
 @dataclass
 class Note:
     raw_text: str
+    title: str
     id: int = field(default_factory=lambda: next(_id_note_counter))
     chunks: List[Chunk] = field(default_factory=list)
     create_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))

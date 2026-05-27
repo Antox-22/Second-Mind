@@ -8,5 +8,5 @@
     "name": "Paolo",
     "age": 19
   },
-  "embedding_model": "all-MiniLM-L6-v2"
+  "embedding_model": "intfloat/multilingual-e5-base"
 }

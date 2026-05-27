@@ -1,52 +1,12 @@
-Oggi mi è venuta in mente una cosa strana mentre stavo sistemando la scrivania:
+Oggi mi Ã¨ venuta in mente una cosa strana mentre stavo sistemando la scrivania: a volte il disordine non Ã¨ davvero disordine, Ã¨ solo un tentativo un po' confuso di tenere vicino tutto quello che ci fa sentire al sicuro. Sul tavolo avevo un quaderno aperto, due penne diverse, il telefono in carica e una bottiglietta d'acqua mezza vuota, eppure non mi sembrava caos. Mi sembrava piÃ¹ una specie di mappa di quello che ho in testa in questo periodo. Da fuori forse sembra che io stia solo procrastinando quando mi fermo a guardare fuori dalla finestra invece di fare subito quello che devo fare. PerÃ² dentro succede quasi sempre qualcosa di piÃ¹ complicato. Ci sono giornate in cui una piccola distrazione mi porta lontanissimo, tipo una canzone sentita per caso, una frase letta al volo o il modo in cui entra la luce nella stanza. Poi mi ritrovo a pensare a cose completamente diverse, e in mezzo a quel giro strano capisco che certi pensieri non arrivano mai da soli.
 
-----------
+--------------
 
-{"emotion": "fear", "score": 99.42}
+Mi sto accorgendo che molte idee buone non nascono quando cerco di forzarle, ma quando lascio che si tocchino tra loro. Un problema di oggi richiama una paura di ieri, una sensazione di qualche mese fa si aggancia a un dettaglio di adesso, e improvvisamente tutto prende una forma piÃ¹ chiara. Forse Ã¨ per questo che mi piace l'idea di tenere traccia delle cose che penso: non tanto per non dimenticarle, ma per vedere in che modo si collegano tra loro. C'Ã¨ anche una parte piÃ¹ onesta che faccio fatica a dire ad alta voce, ed Ã¨ che mi pesa spesso l'idea di dover essere sempre produttivo, sempre lucido, sempre pronto. Come se il valore di una giornata si misurasse solo da quante cose riesco a spuntare. Ma poi arriva un momento tranquillo, magari con il silenzio in casa e un po' di stanchezza negli occhi, e capisco che anche fermarsi fa parte del processo. Anzi, in certi giorni Ã¨ proprio lÃ¬ che succede il lavoro vero.
 
------>----
+--------------
 
-a volte il disordine non è davvero disordine, è solo un tentativo un po' confuso di tenere vicino tutto quello che ci fa sentire al sicuro.
+Alla fine credo che sto cercando un sistema che non mi giudichi quando sono confuso. Un posto dove poter mettere pensieri belli, pensieri brutti, frammenti a metÃ  e idee che magari non porterÃ² mai a termine. Se ci penso bene, Ã¨ quasi quello che vorrei da una versione piÃ¹ ordinata della mia testa: non una macchina perfetta, ma una memoria gentile che sappia ricordare anche il modo in cui sono arrivato a sentire qualcosa.
 
-----------
-
-{"emotion": "sadness", "score": 99.83}
-
------>----
-
-Sul tavolo avevo un quaderno aperto, due penne diverse, il telefono in carica e una bottiglietta d'acqua mezza vuota, eppure non mi sembrava caos. Mi sembrava più una specie di mappa di quello che ho in testa in questo periodo.
-
- Da fuori forse sembra che io stia solo procrastinando quando mi fermo a guardare fuori dalla finestra invece di fare subito quello che devo fare. Però dentro succede quasi sempre qualcosa di più complicato. Ci sono giornate in cui una piccola distrazione mi porta lontanissimo, tipo una canzone sentita per caso, una frase letta al volo o il modo in cui entra la luce nella stanza. Poi mi ritrovo a pensare a cose completamente diverse, e in mezzo a quel giro strano capisco che certi pensieri non arrivano mai da soli.
-
- Mi sto accorgendo che molte idee buone non nascono quando cerco di forzarle, ma quando lascio che si tocchino tra loro.
-
-----------
-
-{"emotion": "sadness", "score": 99.71}
-
------>----
-
-Un problema di oggi richiama una paura di ieri, una sensazione di qualche mese fa si aggancia a un dettaglio di adesso, e improvvisamente tutto prende una forma più chiara. Forse è per questo che mi piace l'idea di tenere traccia delle cose che penso: non tanto per non dimenticarle, ma per vedere in che modo si collegano tra loro.
-
- C'è anche una parte più onesta che faccio fatica a dire ad alta voce, ed è che mi pesa spesso l'idea di dover essere sempre produttivo, sempre lucido, sempre pronto. Come se il valore di una giornata si misurasse solo da quante cose riesco a spuntare. Ma poi arriva un momento tranquillo, magari con il silenzio in casa e un po' di stanchezza negli occhi, e capisco che anche fermarsi fa parte del processo. Anzi, in certi giorni è proprio lì che succede il lavoro vero.
-
- Alla fine credo che sto cercando un sistema che non mi giudichi quando sono confuso.
-
-----------
-
-{"emotion": "sadness", "score": 99.6}
-
------>----
-
-Un posto dove poter mettere pensieri belli, pensieri brutti, frammenti a metà e idee che magari non porterò mai a termine. Se ci penso bene, è quasi quello che vorrei da una versione più ordinata della mia testa: non una macchina perfetta, ma una memoria gentile che sappia ricordare anche il modo in cui sono arrivato a sentire qualcosa.
-
-----------
-
-{"emotion": "joy", "score": 99.69}
-
------>----
-
-
-
-----EDN-----
+--------------
 
